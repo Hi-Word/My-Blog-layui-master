@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="my-blog-layui:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Personal/home" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="43a0e294-17b0-4920-8d7e-0f454d8b455c" />
+        <option name="url" value="https://github.com/Hi-Word/My-Blog-layui-master.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2KDbOSyoMzLO3NbNvgFrPVhGHVy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/My-Blog-layui-master/src/main/resources/static/X-admin",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.41494253",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "993c3340593425b5509decf1c2a67d0b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\static\X-admin" />
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\templates\blog\amaze" />
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\static\blog\amaze\images" />
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\templates\blog\amaze" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MyBlogApplication">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="MyBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-blog-layui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.site.blog.MyBlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="" />
+      <created>1673512070558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673512070558</updated>
+      <workItem from="1673512072043" duration="3816000" />
+      <workItem from="1673598747764" duration="81000" />
+      <workItem from="1675675268308" duration="2541000" />
+      <workItem from="1675763149100" duration="587000" />
+      <workItem from="1675817004090" duration="606000" />
+      <workItem from="1675823907206" duration="7000" />
+      <workItem from="1676428930643" duration="3087000" />
+      <workItem from="1676509254107" duration="3195000" />
+      <workItem from="1676535185993" duration="36000" />
+      <workItem from="1676948958310" duration="4733000" />
+      <workItem from="1676965040695" duration="601000" />
+      <workItem from="1676965657578" duration="444000" />
+      <workItem from="1676966115254" duration="262000" />
+      <workItem from="1676966391744" duration="3092000" />
+      <workItem from="1677055003890" duration="36000" />
+      <workItem from="1677577898877" duration="617000" />
+      <workItem from="1677633524821" duration="1266000" />
+      <workItem from="1677750540930" duration="645000" />
+      <workItem from="1677804133720" duration="8417000" />
+      <workItem from="1678064794801" duration="1926000" />
+      <workItem from="1678150118077" duration="3265000" />
+      <workItem from="1678260534253" duration="4420000" />
+      <workItem from="1678331608928" duration="4357000" />
+      <workItem from="1678414191115" duration="5765000" />
+      <workItem from="1678614774937" duration="6000" />
+      <workItem from="1678844444654" duration="199000" />
+      <workItem from="1678873820217" duration="668000" />
+      <workItem from="1678932795309" duration="1272000" />
+      <workItem from="1678953753557" duration="5801000" />
+      <workItem from="1679887673942" duration="1516000" />
+      <workItem from="1679910210605" duration="933000" />
+      <workItem from="1679963906083" duration="7995000" />
+      <workItem from="1680145736564" duration="121000" />
+      <workItem from="1681464454062" duration="730000" />
+      <workItem from="1681696006972" duration="44000" />
+      <workItem from="1682327257090" duration="1373000" />
+      <workItem from="1682500026707" duration="4023000" />
+      <workItem from="1682506481399" duration="276000" />
+      <workItem from="1682556540685" duration="1876000" />
+      <workItem from="1683029462972" duration="1882000" />
+      <workItem from="1683171180557" duration="11723000" />
+      <workItem from="1683255063779" duration="5054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/site/blog/controller/admin/AdminController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
