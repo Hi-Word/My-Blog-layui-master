@@ -75,10 +75,3 @@
 
 ## 感谢
 
-- [Linn-cn](https://github.com/Linn-cn)
-- [sentsin](https://github.com/sentsin/layui)
-- [spring-projects](https://github.com/spring-projects/spring-boot)
-- [pandao](https://github.com/pandao/editor.md)
-- [zjhch123](https://github.com/zjhch123/solo-skin-amaze)
-# My-Blog-layui-master
-# My-Blog-layui-master
