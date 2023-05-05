@@ -14,11 +14,11 @@
 
 - **部署后你可以根据自己需求修改版权文案、logo 图片、备案记录等网站基础信息；**
 
-- **My Blog layui 后台管理系统的默认登陆账号为 admin 默认登陆密码为 000000；**
+- **My Blog layui 后台管理系统的默认登陆账号为 admin 默认登陆密码为 lifeng123；**
 
 - **有任何问题都可以反馈给我们，我们会尽量完善该项目。**
 
-
+- **测试网站：lifengblog.work**
 
 
 ## 联系作者
@@ -76,6 +76,6 @@
 ## 感谢
 感谢大家！
 - 看板娘
-- link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"
-- script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script
+- **```<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">```**
+- **```<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>```**
 

@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,8 @@
       <workItem from="1683255063779" duration="7614000" />
       <workItem from="1683273883492" duration="36000" />
       <workItem from="1683273938811" duration="109000" />
-      <workItem from="1683274186945" duration="108000" />
+      <workItem from="1683274186945" duration="715000" />
+      <workItem from="1683275537538" duration="310000" />
     </task>
     <servers />
   </component>
