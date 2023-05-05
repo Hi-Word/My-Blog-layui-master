@@ -74,4 +74,4 @@
   ![comment](static-files/comment.png)
 
 ## 感谢
-
+感谢大家！
