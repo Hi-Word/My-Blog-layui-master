@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/My-Blog-layui-master/src/main/resources/static/X-admin",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/My-Blog-layui-master",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
@@ -164,6 +165,8 @@
       <workItem from="1683029462972" duration="1882000" />
       <workItem from="1683171180557" duration="11723000" />
       <workItem from="1683255063779" duration="7614000" />
+      <workItem from="1683273883492" duration="36000" />
+      <workItem from="1683273938811" duration="109000" />
     </task>
     <servers />
   </component>
