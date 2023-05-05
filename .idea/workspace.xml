@@ -9,7 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="" />
+    <list default="true" id="31a1231d-3708-460e-89f4-192247fa1f96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/blog-list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/comment-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/comment-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/comment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/config.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/config.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/dashboard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/detail03.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/detail03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/index03.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/index03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/link03.png" beforeDir="false" afterPath="$PROJECT_DIR$/static-files/link03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static-files/my-blog-info.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Personal/home" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -78,6 +91,7 @@
       <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\static-files" />
       <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\static\blog\amaze\images" />
       <recent name="C:\Users\Administrator\Desktop\My-Blog-layui-master\src\main\resources\templates\blog\amaze" />
     </key>
@@ -160,7 +174,7 @@
       <workItem from="1682556540685" duration="1876000" />
       <workItem from="1683029462972" duration="1882000" />
       <workItem from="1683171180557" duration="11723000" />
-      <workItem from="1683255063779" duration="5054000" />
+      <workItem from="1683255063779" duration="6768000" />
     </task>
     <servers />
   </component>
