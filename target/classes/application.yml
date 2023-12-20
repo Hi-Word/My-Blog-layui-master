@@ -70,8 +70,8 @@ logging:
   level.com.site.blog: debug
 
 upload:
-  uploadAuthorImg: "D:/tmp/myblog/authorImg/"
-  fileUploadDic: "D:/tmp/myblog/upload/"
+  uploadAuthorImg: "/www/wwwroot/default/D:/tmp/myblog/authorImg/"
+  fileUploadDic: "/www/wwwroot/default/D:/tmp/myblog/upload/"
   sqlAuthorImg: "/authorImg/"
   fileSqlDic: "/upload/"
 

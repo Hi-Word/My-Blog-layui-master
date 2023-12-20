@@ -1,0 +1,5733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <Grants>|root||root|localhost|ALTER|G
+|root||root|localhost|ALTER ROUTINE|G
+|root||root|localhost|CREATE|G
+|root||root|localhost|CREATE ROUTINE|G
+|root||root|localhost|CREATE TABLESPACE|G
+|root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||root|localhost|CREATE USER|G
+|root||root|localhost|CREATE VIEW|G
+|root||root|localhost|DELETE|G
+|root||root|localhost|DROP|G
+|root||root|localhost|EVENT|G
+|root||root|localhost|EXECUTE|G
+|root||root|localhost|FILE|G
+|root||root|localhost|INDEX|G
+|root||root|localhost|INSERT|G
+|root||root|localhost|LOCK TABLES|G
+|root||root|localhost|PROCESS|G
+|root||root|localhost|REFERENCES|G
+|root||root|localhost|RELOAD|G
+|root||root|localhost|REPLICATION CLIENT|G
+|root||root|localhost|REPLICATION SLAVE|G
+|root||root|localhost|SELECT|G
+|root||root|localhost|SHOW DATABASES|G
+|root||root|localhost|SHOW VIEW|G
+|root||root|localhost|SHUTDOWN|G
+|root||mysql.session|localhost|SUPER|G
+|root||root|localhost|SUPER|G
+|root||root|localhost|TRIGGER|G
+|root||root|localhost|UPDATE|G
+|root||root|localhost|grant option|G
+performance_schema|schema||mysql.session|localhost|SELECT|G
+studentms|schema||root||ALTER|G
+studentms|schema||root||ALTER ROUTINE|G
+studentms|schema||root||CREATE|G
+studentms|schema||root||CREATE ROUTINE|G
+studentms|schema||root||CREATE TEMPORARY TABLES|G
+studentms|schema||root||CREATE VIEW|G
+studentms|schema||root||DELETE|G
+studentms|schema||root||DROP|G
+studentms|schema||root||EVENT|G
+studentms|schema||root||EXECUTE|G
+studentms|schema||root||INDEX|G
+studentms|schema||root||INSERT|G
+studentms|schema||root||LOCK TABLES|G
+studentms|schema||root||REFERENCES|G
+studentms|schema||root||SELECT|G
+studentms|schema||root||SHOW VIEW|G
+studentms|schema||root||TRIGGER|G
+studentms|schema||root||UPDATE|G
+sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
+      <ServerVersion>5.7.31</ServerVersion>
+    </root>
+    <collation id="2" parent="1" name="big5_chinese_ci">
+      <Charset>big5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="3" parent="1" name="big5_bin">
+      <Charset>big5</Charset>
+    </collation>
+    <collation id="4" parent="1" name="dec8_swedish_ci">
+      <Charset>dec8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="5" parent="1" name="dec8_bin">
+      <Charset>dec8</Charset>
+    </collation>
+    <collation id="6" parent="1" name="cp850_general_ci">
+      <Charset>cp850</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="7" parent="1" name="cp850_bin">
+      <Charset>cp850</Charset>
+    </collation>
+    <collation id="8" parent="1" name="hp8_english_ci">
+      <Charset>hp8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="9" parent="1" name="hp8_bin">
+      <Charset>hp8</Charset>
+    </collation>
+    <collation id="10" parent="1" name="koi8r_general_ci">
+      <Charset>koi8r</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="11" parent="1" name="koi8r_bin">
+      <Charset>koi8r</Charset>
+    </collation>
+    <collation id="12" parent="1" name="latin1_german1_ci">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="13" parent="1" name="latin1_swedish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="14" parent="1" name="latin1_danish_ci">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="15" parent="1" name="latin1_german2_ci">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="16" parent="1" name="latin1_bin">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="17" parent="1" name="latin1_general_ci">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="18" parent="1" name="latin1_general_cs">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="19" parent="1" name="latin1_spanish_ci">
+      <Charset>latin1</Charset>
+    </collation>
+    <collation id="20" parent="1" name="latin2_czech_cs">
+      <Charset>latin2</Charset>
+    </collation>
+    <collation id="21" parent="1" name="latin2_general_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="22" parent="1" name="latin2_hungarian_ci">
+      <Charset>latin2</Charset>
+    </collation>
+    <collation id="23" parent="1" name="latin2_croatian_ci">
+      <Charset>latin2</Charset>
+    </collation>
+    <collation id="24" parent="1" name="latin2_bin">
+      <Charset>latin2</Charset>
+    </collation>
+    <collation id="25" parent="1" name="swe7_swedish_ci">
+      <Charset>swe7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="26" parent="1" name="swe7_bin">
+      <Charset>swe7</Charset>
+    </collation>
+    <collation id="27" parent="1" name="ascii_general_ci">
+      <Charset>ascii</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="28" parent="1" name="ascii_bin">
+      <Charset>ascii</Charset>
+    </collation>
+    <collation id="29" parent="1" name="ujis_japanese_ci">
+      <Charset>ujis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="30" parent="1" name="ujis_bin">
+      <Charset>ujis</Charset>
+    </collation>
+    <collation id="31" parent="1" name="sjis_japanese_ci">
+      <Charset>sjis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="32" parent="1" name="sjis_bin">
+      <Charset>sjis</Charset>
+    </collation>
+    <collation id="33" parent="1" name="hebrew_general_ci">
+      <Charset>hebrew</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="34" parent="1" name="hebrew_bin">
+      <Charset>hebrew</Charset>
+    </collation>
+    <collation id="35" parent="1" name="tis620_thai_ci">
+      <Charset>tis620</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="36" parent="1" name="tis620_bin">
+      <Charset>tis620</Charset>
+    </collation>
+    <collation id="37" parent="1" name="euckr_korean_ci">
+      <Charset>euckr</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="38" parent="1" name="euckr_bin">
+      <Charset>euckr</Charset>
+    </collation>
+    <collation id="39" parent="1" name="koi8u_general_ci">
+      <Charset>koi8u</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="40" parent="1" name="koi8u_bin">
+      <Charset>koi8u</Charset>
+    </collation>
+    <collation id="41" parent="1" name="gb2312_chinese_ci">
+      <Charset>gb2312</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="42" parent="1" name="gb2312_bin">
+      <Charset>gb2312</Charset>
+    </collation>
+    <collation id="43" parent="1" name="greek_general_ci">
+      <Charset>greek</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="44" parent="1" name="greek_bin">
+      <Charset>greek</Charset>
+    </collation>
+    <collation id="45" parent="1" name="cp1250_general_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="46" parent="1" name="cp1250_czech_cs">
+      <Charset>cp1250</Charset>
+    </collation>
+    <collation id="47" parent="1" name="cp1250_croatian_ci">
+      <Charset>cp1250</Charset>
+    </collation>
+    <collation id="48" parent="1" name="cp1250_bin">
+      <Charset>cp1250</Charset>
+    </collation>
+    <collation id="49" parent="1" name="cp1250_polish_ci">
+      <Charset>cp1250</Charset>
+    </collation>
+    <collation id="50" parent="1" name="gbk_chinese_ci">
+      <Charset>gbk</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="51" parent="1" name="gbk_bin">
+      <Charset>gbk</Charset>
+    </collation>
+    <collation id="52" parent="1" name="latin5_turkish_ci">
+      <Charset>latin5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="53" parent="1" name="latin5_bin">
+      <Charset>latin5</Charset>
+    </collation>
+    <collation id="54" parent="1" name="armscii8_general_ci">
+      <Charset>armscii8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="55" parent="1" name="armscii8_bin">
+      <Charset>armscii8</Charset>
+    </collation>
+    <collation id="56" parent="1" name="utf8_general_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="57" parent="1" name="utf8_bin">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="58" parent="1" name="utf8_unicode_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="59" parent="1" name="utf8_icelandic_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="60" parent="1" name="utf8_latvian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="61" parent="1" name="utf8_romanian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="62" parent="1" name="utf8_slovenian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="63" parent="1" name="utf8_polish_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="64" parent="1" name="utf8_estonian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="65" parent="1" name="utf8_spanish_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="66" parent="1" name="utf8_swedish_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="67" parent="1" name="utf8_turkish_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="68" parent="1" name="utf8_czech_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="69" parent="1" name="utf8_danish_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="70" parent="1" name="utf8_lithuanian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="71" parent="1" name="utf8_slovak_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="72" parent="1" name="utf8_spanish2_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="73" parent="1" name="utf8_roman_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="74" parent="1" name="utf8_persian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="75" parent="1" name="utf8_esperanto_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="76" parent="1" name="utf8_hungarian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="77" parent="1" name="utf8_sinhala_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="78" parent="1" name="utf8_german2_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="79" parent="1" name="utf8_croatian_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="80" parent="1" name="utf8_unicode_520_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="81" parent="1" name="utf8_vietnamese_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="82" parent="1" name="utf8_general_mysql500_ci">
+      <Charset>utf8</Charset>
+    </collation>
+    <collation id="83" parent="1" name="ucs2_general_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="84" parent="1" name="ucs2_bin">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="85" parent="1" name="ucs2_unicode_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="86" parent="1" name="ucs2_icelandic_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="87" parent="1" name="ucs2_latvian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="88" parent="1" name="ucs2_romanian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="89" parent="1" name="ucs2_slovenian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="90" parent="1" name="ucs2_polish_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="91" parent="1" name="ucs2_estonian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="92" parent="1" name="ucs2_spanish_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="93" parent="1" name="ucs2_swedish_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="94" parent="1" name="ucs2_turkish_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="95" parent="1" name="ucs2_czech_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="96" parent="1" name="ucs2_danish_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="97" parent="1" name="ucs2_lithuanian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="98" parent="1" name="ucs2_slovak_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="99" parent="1" name="ucs2_spanish2_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="100" parent="1" name="ucs2_roman_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="101" parent="1" name="ucs2_persian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="102" parent="1" name="ucs2_esperanto_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="103" parent="1" name="ucs2_hungarian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="104" parent="1" name="ucs2_sinhala_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="105" parent="1" name="ucs2_german2_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="106" parent="1" name="ucs2_croatian_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="107" parent="1" name="ucs2_unicode_520_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="108" parent="1" name="ucs2_vietnamese_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="109" parent="1" name="ucs2_general_mysql500_ci">
+      <Charset>ucs2</Charset>
+    </collation>
+    <collation id="110" parent="1" name="cp866_general_ci">
+      <Charset>cp866</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="111" parent="1" name="cp866_bin">
+      <Charset>cp866</Charset>
+    </collation>
+    <collation id="112" parent="1" name="keybcs2_general_ci">
+      <Charset>keybcs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="113" parent="1" name="keybcs2_bin">
+      <Charset>keybcs2</Charset>
+    </collation>
+    <collation id="114" parent="1" name="macce_general_ci">
+      <Charset>macce</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="115" parent="1" name="macce_bin">
+      <Charset>macce</Charset>
+    </collation>
+    <collation id="116" parent="1" name="macroman_general_ci">
+      <Charset>macroman</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="117" parent="1" name="macroman_bin">
+      <Charset>macroman</Charset>
+    </collation>
+    <collation id="118" parent="1" name="cp852_general_ci">
+      <Charset>cp852</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="119" parent="1" name="cp852_bin">
+      <Charset>cp852</Charset>
+    </collation>
+    <collation id="120" parent="1" name="latin7_estonian_cs">
+      <Charset>latin7</Charset>
+    </collation>
+    <collation id="121" parent="1" name="latin7_general_ci">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="122" parent="1" name="latin7_general_cs">
+      <Charset>latin7</Charset>
+    </collation>
+    <collation id="123" parent="1" name="latin7_bin">
+      <Charset>latin7</Charset>
+    </collation>
+    <collation id="124" parent="1" name="utf8mb4_general_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="125" parent="1" name="utf8mb4_bin">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="126" parent="1" name="utf8mb4_unicode_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="127" parent="1" name="utf8mb4_icelandic_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="128" parent="1" name="utf8mb4_latvian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="129" parent="1" name="utf8mb4_romanian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="130" parent="1" name="utf8mb4_slovenian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="131" parent="1" name="utf8mb4_polish_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="132" parent="1" name="utf8mb4_estonian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="133" parent="1" name="utf8mb4_spanish_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="134" parent="1" name="utf8mb4_swedish_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="135" parent="1" name="utf8mb4_turkish_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="136" parent="1" name="utf8mb4_czech_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="137" parent="1" name="utf8mb4_danish_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="138" parent="1" name="utf8mb4_lithuanian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="139" parent="1" name="utf8mb4_slovak_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="140" parent="1" name="utf8mb4_spanish2_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="141" parent="1" name="utf8mb4_roman_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="142" parent="1" name="utf8mb4_persian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="143" parent="1" name="utf8mb4_esperanto_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="144" parent="1" name="utf8mb4_hungarian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="145" parent="1" name="utf8mb4_sinhala_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="146" parent="1" name="utf8mb4_german2_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="147" parent="1" name="utf8mb4_croatian_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="148" parent="1" name="utf8mb4_unicode_520_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="149" parent="1" name="utf8mb4_vietnamese_ci">
+      <Charset>utf8mb4</Charset>
+    </collation>
+    <collation id="150" parent="1" name="cp1251_bulgarian_ci">
+      <Charset>cp1251</Charset>
+    </collation>
+    <collation id="151" parent="1" name="cp1251_ukrainian_ci">
+      <Charset>cp1251</Charset>
+    </collation>
+    <collation id="152" parent="1" name="cp1251_bin">
+      <Charset>cp1251</Charset>
+    </collation>
+    <collation id="153" parent="1" name="cp1251_general_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="154" parent="1" name="cp1251_general_cs">
+      <Charset>cp1251</Charset>
+    </collation>
+    <collation id="155" parent="1" name="utf16_general_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="156" parent="1" name="utf16_bin">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="157" parent="1" name="utf16_unicode_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="158" parent="1" name="utf16_icelandic_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="159" parent="1" name="utf16_latvian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="160" parent="1" name="utf16_romanian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="161" parent="1" name="utf16_slovenian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="162" parent="1" name="utf16_polish_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="163" parent="1" name="utf16_estonian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="164" parent="1" name="utf16_spanish_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="165" parent="1" name="utf16_swedish_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="166" parent="1" name="utf16_turkish_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="167" parent="1" name="utf16_czech_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="168" parent="1" name="utf16_danish_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="169" parent="1" name="utf16_lithuanian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="170" parent="1" name="utf16_slovak_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="171" parent="1" name="utf16_spanish2_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="172" parent="1" name="utf16_roman_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="173" parent="1" name="utf16_persian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="174" parent="1" name="utf16_esperanto_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="175" parent="1" name="utf16_hungarian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="176" parent="1" name="utf16_sinhala_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="177" parent="1" name="utf16_german2_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="178" parent="1" name="utf16_croatian_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="179" parent="1" name="utf16_unicode_520_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="180" parent="1" name="utf16_vietnamese_ci">
+      <Charset>utf16</Charset>
+    </collation>
+    <collation id="181" parent="1" name="utf16le_general_ci">
+      <Charset>utf16le</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="182" parent="1" name="utf16le_bin">
+      <Charset>utf16le</Charset>
+    </collation>
+    <collation id="183" parent="1" name="cp1256_general_ci">
+      <Charset>cp1256</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="184" parent="1" name="cp1256_bin">
+      <Charset>cp1256</Charset>
+    </collation>
+    <collation id="185" parent="1" name="cp1257_lithuanian_ci">
+      <Charset>cp1257</Charset>
+    </collation>
+    <collation id="186" parent="1" name="cp1257_bin">
+      <Charset>cp1257</Charset>
+    </collation>
+    <collation id="187" parent="1" name="cp1257_general_ci">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="188" parent="1" name="utf32_general_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="189" parent="1" name="utf32_bin">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="190" parent="1" name="utf32_unicode_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="191" parent="1" name="utf32_icelandic_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="192" parent="1" name="utf32_latvian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="193" parent="1" name="utf32_romanian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="194" parent="1" name="utf32_slovenian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="195" parent="1" name="utf32_polish_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="196" parent="1" name="utf32_estonian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="197" parent="1" name="utf32_spanish_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="198" parent="1" name="utf32_swedish_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="199" parent="1" name="utf32_turkish_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="200" parent="1" name="utf32_czech_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="201" parent="1" name="utf32_danish_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="202" parent="1" name="utf32_lithuanian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="203" parent="1" name="utf32_slovak_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="204" parent="1" name="utf32_spanish2_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="205" parent="1" name="utf32_roman_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="206" parent="1" name="utf32_persian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="207" parent="1" name="utf32_esperanto_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="208" parent="1" name="utf32_hungarian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="209" parent="1" name="utf32_sinhala_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="210" parent="1" name="utf32_german2_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="211" parent="1" name="utf32_croatian_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="212" parent="1" name="utf32_unicode_520_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="213" parent="1" name="utf32_vietnamese_ci">
+      <Charset>utf32</Charset>
+    </collation>
+    <collation id="214" parent="1" name="binary">
+      <Charset>binary</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="215" parent="1" name="geostd8_general_ci">
+      <Charset>geostd8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="216" parent="1" name="geostd8_bin">
+      <Charset>geostd8</Charset>
+    </collation>
+    <collation id="217" parent="1" name="cp932_japanese_ci">
+      <Charset>cp932</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="218" parent="1" name="cp932_bin">
+      <Charset>cp932</Charset>
+    </collation>
+    <collation id="219" parent="1" name="eucjpms_japanese_ci">
+      <Charset>eucjpms</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="220" parent="1" name="eucjpms_bin">
+      <Charset>eucjpms</Charset>
+    </collation>
+    <collation id="221" parent="1" name="gb18030_chinese_ci">
+      <Charset>gb18030</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="222" parent="1" name="gb18030_bin">
+      <Charset>gb18030</Charset>
+    </collation>
+    <collation id="223" parent="1" name="gb18030_unicode_520_ci">
+      <Charset>gb18030</Charset>
+    </collation>
+    <schema id="224" parent="1" name="aurora">
+      <Current>1</Current>
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="225" parent="1" name="dbname">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="226" parent="1" name="domitorysys">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="227" parent="1" name="dormitory">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="228" parent="1" name="exam">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="229" parent="1" name="hostel">
+      <CollationName>utf8_croatian_ci</CollationName>
+    </schema>
+    <schema id="230" parent="1" name="information_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="231" parent="1" name="jeecg-boot">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="232" parent="1" name="mysql">
+      <CollationName>latin1_swedish_ci</CollationName>
+    </schema>
+    <schema id="233" parent="1" name="my_blog_db">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="234" parent="1" name="performance_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="235" parent="1" name="renren_security">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="236" parent="1" name="ry-vue">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="237" parent="1" name="spring-boot-demo">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="238" parent="1" name="springboot_vue">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="239" parent="1" name="studentinfomanagement">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="240" parent="1" name="studentms">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="241" parent="1" name="student_system">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="242" parent="1" name="sys">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="243" parent="1" name="xmzhgl">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <user id="244" parent="1" name="root">
+      <Host>localhost</Host>
+    </user>
+    <user id="245" parent="1" name="mysql.session">
+      <Host>localhost</Host>
+    </user>
+    <user id="246" parent="1" name="mysql.sys">
+      <Host>localhost</Host>
+    </user>
+    <user id="247" parent="1" name="root"/>
+    <table id="248" parent="243" name="autonomy_fund">
+      <Comment>资金申报-自治区北部湾办资金</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="249" parent="243" name="central_budget_statistical_table">
+      <Comment>资金申报---中央内预算</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="250" parent="243" name="dm_qx_yhlx">
+      <Comment>用户类型代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="251" parent="243" name="dm_xm_jsxz">
+      <Comment>建设性质代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="252" parent="243" name="dm_xm_rzfs">
+      <Comment>融资方式代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="253" parent="243" name="dm_xm_sshy">
+      <Comment>所属行业代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="254" parent="243" name="dm_xm_tzgm">
+      <Comment>投资规模代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="255" parent="243" name="dm_xm_xmjd">
+      <Comment>项目阶段代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="256" parent="243" name="dm_xm_xmlx">
+      <Comment>项目类型代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="257" parent="243" name="dm_xm_xmtj">
+      <Comment>项目统计代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="258" parent="243" name="dm_xm_xmzt">
+      <Comment>项目状态代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="259" parent="243" name="dm_xm_yqcy">
+      <Comment>园区产业代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="260" parent="243" name="dm_xm_zjqd">
+      <Comment>资金渠道代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="261" parent="243" name="dm_xm_zsfs">
+      <Comment>招商方式代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="262" parent="243" name="dm_xxtx_xxtxlx">
+      <Comment>消息提醒类型代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="263" parent="243" name="dm_yj_xj">
+      <Comment>预警星级代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="264" parent="243" name="dm_yj_xj2">
+      <Comment>预警星级代码</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="265" parent="243" name="dm_yj_yjlx">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="266" parent="243" name="dm_zzjg_qyzw">
+      <Comment>企业职位信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="267" parent="243" name="economic_data">
+      <Comment>钦州港片区主要经济指标</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="268" parent="243" name="industrial_added_values">
+      <Comment>三次产业增加值占GDP比重</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="269" parent="243" name="major_project_progress_target_responsibility">
+      <Comment>2023年自治区层面统筹推进重大项目（竣工投产）进度目标责任表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="270" parent="243" name="major_projects_2023">
+      <Comment>2023年自治区层面统筹推进重大项目（新开工）进度目标责任表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="271" parent="243" name="special_bond_project">
+      <Comment>资金申报-专项债</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="272" parent="243" name="tb_gy_fj">
+      <Comment>附件信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="273" parent="243" name="tb_month_seq">
+      <Comment>月份序列表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="274" parent="243" name="tb_pool_csc_sql">
+      <Comment>参数池配置表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="275" parent="243" name="tb_pool_csc_zfpd">
+      <Comment>用于保存参数池【字符判断】规则。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="276" parent="243" name="tb_pool_dm_xm">
+      <Comment>用于保存项目对应的代码。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="277" parent="243" name="tb_pool_dm_ywd">
+      <Comment>用于记录业务点代码、名称以及业务点用途用说。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="278" parent="243" name="tb_pool_dm_ywlx">
+      <Comment>用于登记业务类型。业务类型可分为三种：&#xd;
+A、业务点（检查类）&#xd;
+B、业务点（输出类）&#xd;
+</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="279" parent="243" name="tb_pool_dm_ywmk">
+      <Comment>用于保存业务模块配置信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="280" parent="243" name="tb_pool_dm_ywzl">
+      <Comment>用于登记具体的业务子类类别。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="281" parent="243" name="tb_pool_jgc_sql">
+      <Comment>结果池配置表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="282" parent="243" name="tb_pool_jgc_zfpd">
+      <Comment>用于保存结果池【字符判断】规则。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="283" parent="243" name="tb_pool_sjtj_dm_ywfl">
+      <Comment>用于保存数据统计模块的业务分类代码信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="284" parent="243" name="tb_pool_sjtj_pzxx">
+      <Comment>用于保存管理端数据统计模块的配置信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="285" parent="243" name="tb_pool_sjy">
+      <Comment>数据源信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="286" parent="243" name="tb_pool_tsxx">
+      <Comment>用于保存可配置提示信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="287" parent="243" name="tb_pool_xmnbip">
+      <Comment>用于保存每个项目对应的内部IP信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="288" parent="243" name="tb_pool_xmqx">
+      <Comment>项目赋权表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="289" parent="243" name="tb_pool_xtrz">
+      <Comment>系统日志表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="290" parent="243" name="tb_pool_yhxx">
+      <Comment>业务管理系统用户信息表。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="291" parent="243" name="tb_pool_ywd_pdgz_a">
+      <Comment>用于保存检查类业务点判断规则。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="292" parent="243" name="tb_pool_ywd_pdgz_b">
+      <Comment>用于保存输出类业务点判断规则。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="293" parent="243" name="tb_pool_ywmk_mx_a">
+      <Comment>用于保存业务模块明细信息，仅限于保存检查类的业务模块。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="294" parent="243" name="tb_pool_ywmk_mx_b">
+      <Comment>用于保存业务模块明细信息，仅限于保存输出类的业务模块。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="295" parent="243" name="tb_pool_ywmk_ywdtsxx">
+      <Comment>用于保存业务模块中引用的业务点的重置信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="296" parent="243" name="tb_pool_yxsxx">
+      <Comment>用于保存在执行业务调用过程中，如果发生错误，记录整个运行过程的各项信息。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="297" parent="243" name="tb_pool_yxsxx_pzxx">
+      <Comment>用于记录双池非异常状态下保存运行时信息的配置。</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="298" parent="243" name="tb_project_progress_con">
+      <Comment>2023年自治区层面统筹推进重大项目（续建）进度目标责任表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="299" parent="243" name="tb_qx_login">
+      <Comment>登录信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="300" parent="243" name="tb_qx_menu">
+      <Comment>用户权限表（目前只到页面级）</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="301" parent="243" name="tb_qx_permission">
+      <Comment>角色（用户类型）权限表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="302" parent="243" name="tb_qx_zcxxb">
+      <Comment>注册信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="303" parent="243" name="tb_sjtj__jsxx">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="304" parent="243" name="tb_sjtj_data_appyqxmjd">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="305" parent="243" name="tb_sjtj_data_gnzcz">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="306" parent="243" name="tb_sjtj_data_gyzcz">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="307" parent="243" name="tb_sjtj_data_test">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="308" parent="243" name="tb_sjtj_data_tjfxtzwcdfx">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="309" parent="243" name="tb_sjtj_data_xmtj">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="310" parent="243" name="tb_sjtj_data_xzbtjfxczbar">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="311" parent="243" name="tb_sjtj_data_xzbtjfxjdxmtjpie">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="312" parent="243" name="tb_sjtj_data_xzbtjfxtzedbjd">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="313" parent="243" name="tb_sjtj_data_xzbtjfxtzedbnd">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="314" parent="243" name="tb_sjtj_data_xzbtjfxtzedbyd">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="315" parent="243" name="tb_sjtj_data_xzbtjfxtzgmpie">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="316" parent="243" name="tb_sjtj_data_xzbtjfxyqcylbtzezb">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="317" parent="243" name="tb_sjtj_data_yqcylb">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="318" parent="243" name="tb_sjtj_data_yqdttj">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="319" parent="243" name="tb_sjtj_data_yqxmjd">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="320" parent="243" name="tb_sjtj_jsqytj">
+      <Comment>角色区域统计配置</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="321" parent="243" name="tb_sjtj_sjtjpz">
+      <Comment>数据统计配置表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="322" parent="243" name="tb_sjtj_tjsjwdxxb">
+      <Comment>统计数据维度信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="323" parent="243" name="tb_sjtj_ymqy">
+      <Comment>页面区域表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="324" parent="243" name="tb_wh_cybm">
+      <Comment>项目过程参与部门配置表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="325" parent="243" name="tb_wh_gx_xmhj_wjqd">
+      <Comment>项目环节文件关联表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="326" parent="243" name="tb_wh_xmhj">
+      <Comment>项目环节</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="327" parent="243" name="tb_wh_xmqgc">
+      <Comment>项目全过程</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="328" parent="243" name="tb_xm_filelist">
+      <Comment>文件清单</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="329" parent="243" name="tb_xm_gyzcz">
+      <Comment>项目工业总产值</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="330" parent="243" name="tb_xm_gzdl">
+      <Comment>项目跟踪内容大类</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="331" parent="243" name="tb_xm_sczz">
+      <Comment>项目生产总值</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="332" parent="243" name="tb_xm_xmczwt">
+      <Comment>项目存在问题</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="333" parent="243" name="tb_xm_xmfjxx">
+      <Comment>项目附件信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="334" parent="243" name="tb_xm_xmgcxq">
+      <Comment>项目工程详情</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="335" parent="243" name="tb_xm_xmgcxq_lb">
+      <Comment>工程详情类别</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="336" parent="243" name="tb_xm_xmgzxx">
+      <Comment>项目跟踪信息</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="337" parent="243" name="tb_xm_xmhjpz">
+      <Comment>项目环节配置表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="338" parent="243" name="tb_xm_xmjbxx">
+      <Comment>项目基本信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="339" parent="243" name="tb_xm_xmjh">
+      <Comment>项目计划</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="340" parent="243" name="tb_xm_xmrz">
+      <Comment>项目日志</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="341" parent="243" name="tb_xxtx_xxtxxx">
+      <Comment>消息提醒信息</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="342" parent="243" name="tb_xxtx_yhxxtxjl">
+      <Comment>用户消息提醒记录表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="343" parent="243" name="tb_yj_gx_txsxwj">
+      <Comment>提醒事项文件关联表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="344" parent="243" name="tb_yj_txsx">
+      <Comment>预警提醒事项</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="345" parent="243" name="tb_yj_yjxx">
+      <Comment>预警信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="346" parent="243" name="tb_zmxm_xtrz">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="347" parent="243" name="tb_zmxmgl_xtrz">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="348" parent="243" name="tb_zzjg_qyryxx">
+      <Comment>企业人员信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="349" parent="243" name="tb_zzjg_qyxx">
+      <Comment>企业信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="350" parent="243" name="tb_zzjg_yqjgxx">
+      <Comment>园区机构信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="351" parent="243" name="tb_zzjg_yqryxx">
+      <Comment>园区人员信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="352" parent="243" name="tb_zzjg_zmrrxx">
+      <Comment>中马人员信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="353" parent="243" name="tb_zzjg_zmzxxx">
+      <Comment>中马咨询公司信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <column id="354" parent="248" name="id">
+      <AutoIncrement>53</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="355" parent="248" name="year">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="356" parent="248" name="project_name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="357" parent="248" name="project_owner">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="358" parent="248" name="funding">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="359" parent="248" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="360" parent="248" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="361" parent="249" name="id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="362" parent="249" name="year">
+      <DataType>int(11)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="363" parent="249" name="project_name">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="364" parent="249" name="total_investment">
+      <DataType>decimal(18,2 digit)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="365" parent="249" name="central_budget_investment">
+      <DataType>decimal(18,2 digit)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="366" parent="249" name="is_started">
+      <DataType>varchar(10)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="367" parent="249" name="progress_and_next_steps">
+      <DataType>text|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="368" parent="249" name="project_inspector_and_contact">
+      <DataType>varchar(200)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="369" parent="249" name="remarks">
+      <DataType>text|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="370" parent="249" name="is_stopped_due_to_epidemic">
+      <DataType>varchar(10)|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="371" parent="249" name="is_resumed">
+      <DataType>varchar(10)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <index id="372" parent="249" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="373" parent="249" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="374" parent="250" name="yhlx_dm">
+      <Comment>用户类型代码（示例：A、B）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="375" parent="250" name="yhlx_mc">
+      <Comment>用户类型名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="376" parent="250" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="377" parent="250" name="PRIMARY">
+      <ColNames>yhlx_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="378" parent="250" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="379" parent="251" name="jsxz_dm">
+      <Comment>建设性质代码（示例：K01、K02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="380" parent="251" name="jsxz_mc">
+      <Comment>建设性质名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="381" parent="251" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="382" parent="251" name="PRIMARY">
+      <ColNames>jsxz_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="383" parent="251" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="384" parent="252" name="rzfs_dm">
+      <Comment>融资方式代码（示例：H01、H02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="385" parent="252" name="rzfs_mc">
+      <Comment>融资方式名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="386" parent="252" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="387" parent="252" name="PRIMARY">
+      <ColNames>rzfs_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="388" parent="252" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="389" parent="253" name="sshy_dm">
+      <Comment>所属行业代码（示例：E01、E02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="390" parent="253" name="sshy_mc">
+      <Comment>所属行业名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="391" parent="253" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="392" parent="253" name="PRIMARY">
+      <ColNames>sshy_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="393" parent="253" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="394" parent="254" name="tzgm_dm">
+      <Comment>投资规模代码（示例：I01、I02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="395" parent="254" name="tzgm_mc">
+      <Comment>投资规模名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="396" parent="254" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="397" parent="254" name="PRIMARY">
+      <ColNames>tzgm_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="398" parent="254" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="399" parent="255" name="xmjd_dm">
+      <Comment>项目阶段代码（示例：D01、D02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="400" parent="255" name="xmjd_mc">
+      <Comment>项目阶段名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="401" parent="255" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="402" parent="255" name="PRIMARY">
+      <ColNames>xmjd_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="403" parent="255" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="404" parent="256" name="xmlx_dm">
+      <Comment>项目类型代码（示例：C01、C02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="405" parent="256" name="xmlx_mc">
+      <Comment>项目类型名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="406" parent="256" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="407" parent="256" name="PRIMARY">
+      <ColNames>xmlx_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="408" parent="256" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="409" parent="257" name="xmtj_dm">
+      <Comment>项目统计代码（示例：B01、B02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="410" parent="257" name="xmtj_mc">
+      <Comment>项目统计名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="411" parent="257" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="412" parent="257" name="PRIMARY">
+      <ColNames>xmtj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="413" parent="257" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="414" parent="258" name="xmzt_dm">
+      <Comment>项目状态代码（示例：J01、J02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="415" parent="258" name="xmzt_mc">
+      <Comment>项目状态名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="416" parent="258" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="417" parent="258" name="PRIMARY">
+      <ColNames>xmzt_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="418" parent="258" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="419" parent="259" name="yqcy_dm">
+      <Comment>园区产业代码（示例：A01、A02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="420" parent="259" name="yqcy_mc">
+      <Comment>园区产业名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="421" parent="259" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="422" parent="259" name="PRIMARY">
+      <ColNames>yqcy_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="423" parent="259" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="424" parent="260" name="zjqd_dm">
+      <Comment>资金渠道代码（示例：G01、G02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="425" parent="260" name="zjqd_mc">
+      <Comment>资金渠道名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="426" parent="260" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="427" parent="260" name="PRIMARY">
+      <ColNames>zjqd_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="428" parent="260" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="429" parent="261" name="zsfs_dm">
+      <Comment>招商方式代码（示例：F01、F02）</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="430" parent="261" name="zsfs_mc">
+      <Comment>招商方式名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="431" parent="261" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="432" parent="261" name="PRIMARY">
+      <ColNames>zsfs_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="433" parent="261" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="434" parent="262" name="xxtxlx_dm">
+      <Comment>消息提醒类型代码（示例：A、B）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="435" parent="262" name="xxtxlx_mc">
+      <Comment>消息提醒类型名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="436" parent="262" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="437" parent="262" name="PRIMARY">
+      <ColNames>xxtxlx_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="438" parent="262" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="439" parent="263" name="yjxj_dm">
+      <Comment>预警星级代码（示例：1，2）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="440" parent="263" name="yjxj_mc">
+      <Comment>预警星级名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="441" parent="263" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="442" parent="263" name="ysdm">
+      <Comment>颜色代码（示例：#FFB6C1）</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="443" parent="263" name="PRIMARY">
+      <ColNames>yjxj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="444" parent="263" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="445" parent="264" name="yjxj_dm">
+      <Comment>预警星级代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="446" parent="264" name="yjxj_mc">
+      <Comment>预警星级名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="447" parent="264" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="448" parent="264" name="PRIMARY">
+      <ColNames>yjxj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="449" parent="264" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="450" parent="265" name="yjlx_dm">
+      <Comment>预警类型代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="451" parent="265" name="yjlx_mc">
+      <Comment>预警类型名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="452" parent="265" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="453" parent="265" name="yjlxdl">
+      <Comment>预警类型大类（A：项目计划类 B：项目存在问题类）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="454" parent="265" name="PRIMARY">
+      <ColNames>yjlx_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="455" parent="265" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="456" parent="266" name="zw_dm">
+      <Comment>职位代码（示例：01、02）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="457" parent="266" name="zw_mc">
+      <Comment>职位名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="458" parent="266" name="yxbz">
+      <Comment>有效标志（Y：有效  N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="459" parent="266" name="PRIMARY">
+      <ColNames>zw_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="460" parent="266" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="461" parent="267" name="id">
+      <Comment>月份指标</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="462" parent="267" name="gdp">
+      <Comment>GDP</Comment>
+      <DataType>float|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="463" parent="267" name="agricultural_output">
+      <Comment>农林牧渔业总产值(亿元)</Comment>
+      <DataType>float|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="464" parent="267" name="construction_output">
+      <Comment>建筑业总产值(亿元)</Comment>
+      <DataType>float|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="465" parent="267" name="wholesale_sales">
+      <Comment>限额以上批发业商品销售额</Comment>
+      <DataType>float|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="466" parent="267" name="retail_sales">
+      <Comment>限额以上零售业商品销售额</Comment>
+      <DataType>float|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="467" parent="267" name="foreign_trade">
+      <Comment>外贸进出口（亿元）</Comment>
+      <DataType>float|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="468" parent="267" name="foreign_domestic_investment">
+      <Comment>引进国内外到位资金（亿元）</Comment>
+      <DataType>float|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="469" parent="267" name="fiscal_revenue">
+      <Comment>财政收入（亿元）</Comment>
+      <DataType>float|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="470" parent="267" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="471" parent="267" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="472" parent="268" name="year">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="473" parent="268" name="primary_industry">
+      <DataType>decimal(18,2 digit)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="474" parent="268" name="secondary_industry">
+      <DataType>decimal(18,2 digit)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="475" parent="268" name="tertiary_industry">
+      <DataType>decimal(18,2 digit)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="476" parent="268" name="PRIMARY">
+      <ColNames>year</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="477" parent="268" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="478" parent="269" name="id">
+      <AutoIncrement>12</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="479" parent="269" name="project_name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="480" parent="269" name="project_code">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="481" parent="269" name="project_category">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="482" parent="269" name="main_construction_content">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="483" parent="269" name="construction_start_year">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="484" parent="269" name="total_investment">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="485" parent="269" name="completed_investment">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="486" parent="269" name="plan_investment_2023">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="487" parent="269" name="completion_month">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="488" parent="269" name="engineering_progress_2022">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+    </column>
+    <column id="489" parent="269" name="engineering_progress_target_2023">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+    </column>
+    <column id="490" parent="269" name="project_owner">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+    </column>
+    <column id="491" parent="269" name="responsible_department">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>14</Position>
+    </column>
+    <column id="492" parent="269" name="remarks">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>15</Position>
+    </column>
+    <index id="493" parent="269" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="494" parent="269" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="495" parent="270" name="id">
+      <AutoIncrement>13</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="496" parent="270" name="project_name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="497" parent="270" name="project_code">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="498" parent="270" name="project_category">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="499" parent="270" name="main_construction_content_and_scale">
+      <DataType>text|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="500" parent="270" name="construction_period">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="501" parent="270" name="start_month">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="502" parent="270" name="total_investment">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="503" parent="270" name="planned_investment_2023">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="504" parent="270" name="progress_in_2022">
+      <DataType>text|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="505" parent="270" name="image_progress_goal_2023">
+      <DataType>text|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="506" parent="270" name="project_owner">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="507" parent="270" name="responsible_department">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="508" parent="270" name="remarks">
+      <DataType>text|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <index id="509" parent="270" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="510" parent="270" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="511" parent="271" name="id">
+      <AutoIncrement>56</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="512" parent="271" name="year">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="513" parent="271" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="514" parent="271" name="bond_amount">
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="515" parent="271" name="unit">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="516" parent="271" name="remark">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <index id="517" parent="271" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="518" parent="271" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="519" parent="272" name="fj_id">
+      <Comment>附件ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="520" parent="272" name="fjmc">
+      <Comment>附件名称</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="521" parent="272" name="fjlj">
+      <Comment>附件路径</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="522" parent="272" name="scr">
+      <Comment>上传人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="523" parent="272" name="scsj">
+      <Comment>上传时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="524" parent="272" name="PRIMARY">
+      <ColNames>fj_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="525" parent="272" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="526" parent="273" name="month_id">
+      <Comment>int格式月份值</Comment>
+      <DataType>int(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="527" parent="273" name="month_char">
+      <Comment>CHAR格式月份值</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="528" parent="273" name="month_char2">
+      <Comment>前缀“-”的CHAR格式月份值</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="529" parent="273" name="PRIMARY">
+      <ColNames>month_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="530" parent="273" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="531" parent="274" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="532" parent="274" name="CSID">
+      <Comment>参数ID</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="533" parent="274" name="CSMC">
+      <Comment>参数名称</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="534" parent="274" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="535" parent="274" name="CSJB_DM">
+      <Comment>参数级别（-1为常量，0为基础参数，1、2、3...为各级参数）</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="536" parent="274" name="CSSQL">
+      <Comment>参数查询SQL语句或数据库函数名称，常量或基础参数时，此值可为空</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="537" parent="274" name="SQLLX">
+      <Comment>参数查询类型（0：sql查询  1：函数查询  5：字符判断）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="538" parent="274" name="CXSJY">
+      <Comment>参数查询数据源名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="539" parent="274" name="IN_PARAMS">
+      <Comment>输入参数（SQL时例如：NSRSBH,SSQQ；函数时例如：NSRSBH=varchar,SSQQ=date）</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="540" parent="274" name="OUT_PARAMS">
+      <Comment>输出参数（SQL时，例如：NSRSBH=string,SSQQ=date；函数时例如：NSRSBH,SSQQ）此输出为最终到参数池的数据</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="541" parent="274" name="FUN_OUTPARAM">
+      <Comment>函数输出  此输出为函数执行所需输出位置</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="542" parent="274" name="ZXTJ">
+      <Comment>执行前提条件（例如：AAA==false@BBB!=0@CCC&gt;&gt;#DDD#）此种A、B、C、D指的是参数池中的已有参数</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="543" parent="274" name="XGSJ">
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="544" parent="274" name="XGR">
+      <Comment>最后修改人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="545" parent="274" name="IP">
+      <Comment>所在IP</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <column id="546" parent="274" name="CSZYFS">
+      <Comment>SQL参数注入方式（A表示【语句拼接方式】，空值则为默认方式：参数绑定）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>16</Position>
+    </column>
+    <index id="547" parent="274" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="548" parent="274" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="549" parent="275" name="ID">
+      <Comment>主键ID（分组序号+序号）</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="550" parent="275" name="CSC_ID">
+      <Comment>参数池ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="551" parent="275" name="FZXH">
+      <Comment>分组序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="552" parent="275" name="CSID">
+      <Comment>参数ID</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="553" parent="275" name="PDLX">
+      <Comment>判断类型</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="554" parent="275" name="PDMB">
+      <Comment>判断目标</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="555" parent="275" name="SCJG">
+      <Comment>输出结果</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="556" parent="275" name="SCJGLX">
+      <Comment>输出结果类型（0：具体内容  1：参数引用）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="557" parent="275" name="FZNGX">
+      <Comment>分组内关系（空值或A为默认的【且】关系，O为【或】关系）</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="558" parent="275" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="559" parent="275" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="560" parent="276" name="XM_DM">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="561" parent="276" name="XM_MC">
+      <Comment>项目名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="562" parent="276" name="PRIMARY">
+      <ColNames>XM_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="563" parent="276" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="564" parent="277" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="565" parent="277" name="YWD_MC">
+      <Comment>业务点名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="566" parent="277" name="YWDSM">
+      <Comment>业务点说明</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="567" parent="277" name="GZFZLX">
+      <Comment>规则分组类型（0：分组间为【或】关系  1：分组间互不影响）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="568" parent="277" name="XM_DM">
+      <Comment>所属项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="569" parent="277" name="GKBZ">
+      <Comment>公开标志</Comment>
+      <DataType>char(1)|0s</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="570" parent="277" name="PRIMARY">
+      <ColNames>YWD_DM
+XM_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="571" parent="277" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="572" parent="278" name="YWLX_DM">
+      <Comment>业务类型代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="573" parent="278" name="YWLX_MC">
+      <Comment>业务类型名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="574" parent="278" name="YWLXSM">
+      <Comment>业务类型说明</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="575" parent="278" name="PRIMARY">
+      <ColNames>YWLX_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="576" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="577" parent="279" name="YWMK_DM">
+      <Comment>业务模块代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="578" parent="279" name="YWMK_MC">
+      <Comment>业务模块名称</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="579" parent="279" name="YWMKSM">
+      <Comment>业务模块说明</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="580" parent="279" name="XM_DM">
+      <Comment>所属项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="581" parent="279" name="GKBZ">
+      <Comment>公开标志</Comment>
+      <DataType>char(1)|0s</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="582" parent="279" name="PRIMARY">
+      <ColNames>YWMK_DM
+XM_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="583" parent="279" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="584" parent="280" name="YWZL_DM">
+      <Comment>业务子类代码</Comment>
+      <DataType>char(3)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="585" parent="280" name="YWZL_MC">
+      <Comment>业务子类名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="586" parent="280" name="XM_DM">
+      <Comment>所属项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="587" parent="280" name="PRIMARY">
+      <ColNames>YWZL_DM
+XM_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="588" parent="280" name="UN_TB_POOL_DM_YWZL_YWZL_DM">
+      <ColNames>YWZL_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="589" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="590" parent="280" name="UN_TB_POOL_DM_YWZL_YWZL_DM">
+      <UnderlyingIndexName>UN_TB_POOL_DM_YWZL_YWZL_DM</UnderlyingIndexName>
+    </key>
+    <column id="591" parent="281" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="592" parent="281" name="JGID">
+      <Comment>结果ID</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="593" parent="281" name="JGMC">
+      <Comment>结果名称</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="594" parent="281" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="595" parent="281" name="JGSQL">
+      <Comment>结果查询SQL语句或数据库函数名称，结果不经过查询时，此值可为空</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="596" parent="281" name="SQLLX">
+      <Comment>结果查询类型（0：sql查询  1：函数查询  2：公式计算  3：字符拆解  4：字符直接返回  5：字符判断  6：列表SQL查询）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="597" parent="281" name="JGSJY">
+      <Comment>结果查询数据源名称(查询类型为公式计算时，该值可为空)</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="598" parent="281" name="IN_PARAMS">
+      <Comment>输入参数（SQL时例如：NSRSBH,SSQQ；函数时例如：NSRSBH=varchar,SSQQ=date，字符拆解时例如：NSRLSXX=#）</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="599" parent="281" name="OUT_PARAMS">
+      <Comment>输出结果（SQL时，例如：NSRSBH=string,SSQQ=date；函数时例如：NSRSBH,SSQQ，公式计算时例如：#XSE#*#SL#，字符拆解时例如：XSE1,XSE2,XSE3）此输出为最终到结果池的数据</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="600" parent="281" name="FUN_OUTPARAM">
+      <Comment>函数输出  此输出为函数执行所需输出位置</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="601" parent="281" name="CSZXTJ">
+      <Comment>执行前提参数条件（例如：AAA==false@BBB!=0@CCC&gt;&gt;#DDD#）此种A、B、C、D指的是参数池中的已有参数</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="602" parent="281" name="XGSJ">
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="603" parent="281" name="XGR">
+      <Comment>最后修改人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="604" parent="281" name="IP">
+      <Comment>所在IP</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="605" parent="281" name="CSZYFS">
+      <Comment>SQL参数注入方式（A表示【语句拼接方式】，空值则为默认方式：参数绑定）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <index id="606" parent="281" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="607" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="608" parent="282" name="ID">
+      <Comment>主键ID（分组序号+序号）</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="609" parent="282" name="JGC_ID">
+      <Comment>结果池ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="610" parent="282" name="FZXH">
+      <Comment>分组序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="611" parent="282" name="CSID">
+      <Comment>参数ID</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="612" parent="282" name="PDLX">
+      <Comment>判断类型</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="613" parent="282" name="PDMB">
+      <Comment>判断目标</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="614" parent="282" name="SCJG">
+      <Comment>输出结果</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="615" parent="282" name="SCJGLX">
+      <Comment>输出结果类型（0：具体内容  1：参数引用）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="616" parent="282" name="FZNGX">
+      <Comment>分组内关系（空值或A为默认的【且】关系，O为【或】关系）</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="617" parent="282" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="618" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="619" parent="283" name="YWFL_DM">
+      <Comment>业务分类代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="620" parent="283" name="YWFL_MC">
+      <Comment>业务分类名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="621" parent="283" name="PRIMARY">
+      <ColNames>YWFL_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="622" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="623" parent="284" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="624" parent="284" name="YWFL_DM">
+      <Comment>业务分类代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="625" parent="284" name="TJMC">
+      <Comment>统计名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="626" parent="284" name="TJLX">
+      <Comment>统计类型（0为表格式，1为图表式）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="627" parent="284" name="TJYS">
+      <Comment>统计样式（0为表格的单格式，1为表格的列表式，A为图表的单曲线，B为图表的多曲线，C为图表的饼状图，D为图表的单柱图，E为图表的多柱图）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="628" parent="284" name="YWD_DM">
+      <Comment>业务点代码（多个时用英文逗号分隔）</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="629" parent="284" name="XGR">
+      <Comment>最后修改人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="630" parent="284" name="XGSJ">
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <index id="631" parent="284" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="632" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="633" parent="285" name="SJY_MC">
+      <Comment>数据源名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="634" parent="285" name="SJY_ZWMC">
+      <Comment>数据源中文名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="635" parent="285" name="SJYLX">
+      <Comment>数据源类型（0：DAO名称  1：DataSource名称）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="636" parent="285" name="SJKBM">
+      <Comment>数据库编码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="637" parent="285" name="PRIMARY">
+      <ColNames>SJY_MC</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="638" parent="285" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="639" parent="286" name="XXXH">
+      <Comment>信息序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="640" parent="286" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="641" parent="286" name="FZXH">
+      <Comment>业务规则分组序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="642" parent="286" name="XXBT">
+      <Comment>信息标题</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="643" parent="286" name="XXNR">
+      <Comment>信息内容</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="644" parent="286" name="PRIMARY">
+      <ColNames>XXXH</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="645" parent="286" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="646" parent="287" name="XM_DM">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="647" parent="287" name="IP">
+      <Comment>IP地址</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="648" parent="287" name="IPSM">
+      <Comment>IP说明</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="649" parent="287" name="PRIMARY">
+      <ColNames>XM_DM
+IP</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="650" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="651" parent="288" name="YHMC">
+      <Comment>用户帐号</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="652" parent="288" name="XM_DM">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="653" parent="288" name="DQXZ">
+      <Comment>当前选择（Y：是当前选择   N：不是当前选择）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="654" parent="288" name="QXLX">
+      <Comment>权限类型（Q：查询  U：修改）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="655" parent="288" name="PRIMARY">
+      <ColNames>YHMC
+XM_DM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="656" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="657" parent="289" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="658" parent="289" name="SJ">
+      <Comment>记录时间</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="659" parent="289" name="RZ_LX">
+      <Comment>日志类型</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="660" parent="289" name="OPERATOR">
+      <Comment>操作人</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="661" parent="289" name="IP">
+      <Comment>IP地址</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="662" parent="289" name="RZNR">
+      <Comment>日志内容</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="663" parent="289" name="CWXX">
+      <Comment>错误信息</Comment>
+      <DataType>text|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="664" parent="289" name="WZ">
+      <Comment>位置</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="665" parent="289" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="666" parent="289" name="IDX_TB_POOL_XTRZ_SJ">
+      <ColNames>SJ</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="667" parent="289" name="IDX_TB_POOL_XTRZ_OPERATOR">
+      <ColNames>OPERATOR</ColNames>
+      <PrefixLengths>255</PrefixLengths>
+      <Type>btree</Type>
+    </index>
+    <key id="668" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="669" parent="290" name="YHZH">
+      <Comment>用户帐号</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="670" parent="290" name="YHMC">
+      <Comment>用户名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="671" parent="290" name="DLMM">
+      <Comment>登录密码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="672" parent="290" name="PRIMARY">
+      <ColNames>YHZH</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="673" parent="290" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="674" parent="291" name="ID">
+      <Comment>主键ID（分组序号+序号）</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="675" parent="291" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="676" parent="291" name="FZXH">
+      <Comment>分组序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="677" parent="291" name="JGID">
+      <Comment>结果ID</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="678" parent="291" name="PDLX">
+      <Comment>判断类型</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="679" parent="291" name="PDMB">
+      <Comment>判断目标</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="680" parent="291" name="FZNGX">
+      <Comment>分组内关系（空值或A为默认的【且】关系，O为【或】关系）</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="681" parent="291" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="682" parent="291" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="683" parent="292" name="ID">
+      <Comment>主键ID（分组序号+序号）</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="684" parent="292" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="685" parent="292" name="FZXH">
+      <Comment>分组序号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="686" parent="292" name="JGID">
+      <Comment>结果ID</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="687" parent="292" name="PDLX">
+      <Comment>判断类型</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="688" parent="292" name="PDMB">
+      <Comment>判断目标</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="689" parent="292" name="SCJG">
+      <Comment>输出结果</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="690" parent="292" name="SCJGLX">
+      <Comment>输出结果类型（0：具体内容  1：结果引用）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="691" parent="292" name="FZNGX">
+      <Comment>分组内关系（空值或A为默认的【且】关系，O为【或】关系）</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="692" parent="292" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="693" parent="292" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="694" parent="293" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="695" parent="293" name="YWMK_DM">
+      <Comment>业务模块代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="696" parent="293" name="XH">
+      <Comment>序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="697" parent="293" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="698" parent="293" name="YWZZBZ">
+      <Comment>业务中止标志（Y:业务中止  N:信息累加  Z:信息确认  S:业务停用）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="699" parent="293" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="700" parent="293" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="701" parent="294" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="702" parent="294" name="YWMK_DM">
+      <Comment>业务模块代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="703" parent="294" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="704" parent="294" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="705" parent="294" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="706" parent="295" name="MXA_ID">
+      <Comment>明细ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="707" parent="295" name="XXBT">
+      <Comment>信息标题</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="708" parent="295" name="XXNR">
+      <Comment>信息内容</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="709" parent="295" name="PRIMARY">
+      <ColNames>MXA_ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="710" parent="295" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="711" parent="296" name="YXBM">
+      <Comment>运行编码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="712" parent="296" name="JLRQ">
+      <Comment>记录日期</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="713" parent="296" name="YWD_DM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="714" parent="296" name="JTCL">
+      <Comment>静态常量</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="715" parent="296" name="JCCS">
+      <Comment>基础参数</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="716" parent="296" name="JBCS">
+      <Comment>级别参数</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="717" parent="296" name="JGC">
+      <Comment>结果池</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="718" parent="296" name="CWXX">
+      <Comment>错误信息</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="719" parent="296" name="ZXSBM">
+      <Comment>执行识别码</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="720" parent="296" name="PRIMARY">
+      <ColNames>YXBM</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="721" parent="296" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="722" parent="297" name="ID">
+      <Comment>主键ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="723" parent="297" name="YWDM">
+      <Comment>业务点代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="724" parent="297" name="JLTJ">
+      <Comment>记录条件（格式类似于：NSRSBH=450100123456789，为空时表示无条件记录）</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="725" parent="297" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="726" parent="297" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="727" parent="298" name="id">
+      <AutoIncrement>21</AutoIncrement>
+      <Comment>序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="728" parent="298" name="project_name">
+      <Comment>项目名称</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="729" parent="298" name="project_code">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="730" parent="298" name="project_category">
+      <Comment>项目分类</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="731" parent="298" name="construction_content">
+      <Comment>主要建设内容及规模</Comment>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="732" parent="298" name="construction_period">
+      <Comment>建设起止年限</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="733" parent="298" name="total_investment">
+      <Comment>总投资</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="734" parent="298" name="accumulated_investment">
+      <Comment>截至2022年底累计完成投资</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="735" parent="298" name="planned_investment">
+      <Comment>2023年计划投资</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="736" parent="298" name="engineering_progress">
+      <Comment>截至2022年底工程进展情况</Comment>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="737" parent="298" name="engineering_target">
+      <Comment>2023年工程形象进度目标</Comment>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+    </column>
+    <column id="738" parent="298" name="project_owner">
+      <Comment>项目业主</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+    </column>
+    <column id="739" parent="298" name="responsible_unit">
+      <Comment>责任单位</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+    </column>
+    <column id="740" parent="298" name="remark">
+      <Comment>备注</Comment>
+      <DataType>text|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <index id="741" parent="298" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="742" parent="298" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="743" parent="299" name="login_id">
+      <Comment>登录ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="744" parent="299" name="dlzh">
+      <Comment>登录帐号</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="745" parent="299" name="yhmc">
+      <Comment>用户名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="746" parent="299" name="password">
+      <Comment>登录密码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="747" parent="299" name="yhlx_dm">
+      <Comment>用户类型</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="748" parent="299" name="oa_flag">
+      <Comment>OA账号标识（用于标识是否OA的账号。Y：是 N：否）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="749" parent="299" name="status">
+      <Comment>状态（Y：启用/N：禁用）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="750" parent="299" name="xgsj">
+      <Comment>修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="751" parent="299" name="xgr">
+      <Comment>修改人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="752" parent="299" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <index id="753" parent="299" name="PRIMARY">
+      <ColNames>login_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="754" parent="299" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="755" parent="300" name="id">
+      <AutoIncrement>32</AutoIncrement>
+      <Comment>权限id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="756" parent="300" name="label">
+      <Comment>页面标题</Comment>
+      <DataType>varchar(80)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="757" parent="300" name="url">
+      <Comment>页面地址url</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="758" parent="300" name="is_menu">
+      <Comment>页面是否属于菜单按钮</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="759" parent="300" name="pid">
+      <Comment>父级页面id，没有父级则0</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="760" parent="300" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="761" parent="300" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="762" parent="301" name="id">
+      <AutoIncrement>124</AutoIncrement>
+      <Comment>权限id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="763" parent="301" name="yhlx_dm">
+      <Comment>用户类型代码</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="764" parent="301" name="mid">
+      <Comment>菜单id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="765" parent="301" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="766" parent="301" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="767" parent="302" name="shxydm">
+      <Comment>统一社会信用代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="768" parent="302" name="mm">
+      <Comment>密码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="769" parent="302" name="dwmc">
+      <Comment>单位名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="770" parent="302" name="dwdz">
+      <Comment>单位地址</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="771" parent="302" name="yhlx_dm">
+      <Comment>用户类型</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="772" parent="302" name="frdb">
+      <Comment>法人代表</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="773" parent="302" name="frshj">
+      <Comment>法人手机号</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="774" parent="302" name="qyyx">
+      <Comment>企业邮箱</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="775" parent="302" name="xgr">
+      <Comment>修改人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="776" parent="302" name="xgsj">
+      <Comment>修改时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="777" parent="302" name="shbz">
+      <Comment>审核标志（Y：已审核 N：未审核）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="778" parent="302" name="shjg">
+      <Comment>审核结果（Y：审核通关 N：审核不通过）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <index id="779" parent="302" name="PRIMARY">
+      <ColNames>shxydm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="780" parent="302" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="781" parent="303" name="JS_ID">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="782" parent="303" name="JS_MC">
+      <DataType>varchar(300)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="783" parent="303" name="JS_QX">
+      <DataType>varchar(500)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="784" parent="303" name="PRIMARY">
+      <ColNames>JS_ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="785" parent="303" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="786" parent="304" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="787" parent="304" name="t0">
+      <Comment>进度类型</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="788" parent="304" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="789" parent="304" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="790" parent="304" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="791" parent="305" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="792" parent="305" name="t0">
+      <Comment>年度</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="793" parent="305" name="t1">
+      <Comment>生产总值</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="794" parent="305" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="795" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="796" parent="306" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="797" parent="306" name="t0">
+      <Comment>年份</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="798" parent="306" name="t1">
+      <Comment>规上总产值</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="799" parent="306" name="t2">
+      <Comment>工业总产值</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="800" parent="306" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="801" parent="306" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="802" parent="307" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="803" parent="307" name="t0">
+      <Comment>年份</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="804" parent="307" name="t1">
+      <Comment>预计产值</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="805" parent="307" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="806" parent="307" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="807" parent="308" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="808" parent="308" name="t0">
+      <Comment>项目名称</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="809" parent="308" name="t1">
+      <Comment>建设性质</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="810" parent="308" name="t2">
+      <Comment>建设起止年限</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="811" parent="308" name="t3">
+      <Comment>总投资</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="812" parent="308" name="t4">
+      <Comment>累计完成投资</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="813" parent="308" name="t5">
+      <Comment>完成度百分比</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="814" parent="308" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="815" parent="308" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="816" parent="309" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="817" parent="309" name="t0">
+      <Comment>项目类别</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="818" parent="309" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="819" parent="309" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="820" parent="309" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="821" parent="310" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="822" parent="310" name="t0">
+      <Comment>年度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="823" parent="310" name="t1">
+      <Comment>计划完成</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="824" parent="310" name="t2">
+      <Comment>实际</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="825" parent="310" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="826" parent="310" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="827" parent="311" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="828" parent="311" name="t0">
+      <Comment>项目节段</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="829" parent="311" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="830" parent="311" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="831" parent="311" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="832" parent="312" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="833" parent="312" name="t0">
+      <Comment>季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="834" parent="312" name="t1">
+      <Comment>2014年季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="835" parent="312" name="t2">
+      <Comment>2015年季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="836" parent="312" name="t3">
+      <Comment>2016年季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="837" parent="312" name="t4">
+      <Comment>2017年季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="838" parent="312" name="t5">
+      <Comment>2018年季度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="839" parent="312" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="840" parent="312" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="841" parent="313" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="842" parent="313" name="t0">
+      <Comment>年度</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="843" parent="313" name="t1">
+      <Comment>计划投资额</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="844" parent="313" name="t2">
+      <Comment>实际投资额</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="845" parent="313" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="846" parent="313" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="847" parent="314" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="848" parent="314" name="t0">
+      <Comment>月份</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="849" parent="314" name="t1">
+      <Comment>2014年</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="850" parent="314" name="t2">
+      <Comment>2015年</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="851" parent="314" name="t3">
+      <Comment>2016年</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="852" parent="314" name="t4">
+      <Comment>2017年</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="853" parent="314" name="t5">
+      <Comment>2018年</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="854" parent="314" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="855" parent="314" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="856" parent="315" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="857" parent="315" name="t0">
+      <Comment>投资规模</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="858" parent="315" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="859" parent="315" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="860" parent="315" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="861" parent="316" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="862" parent="316" name="t0">
+      <Comment>项目类型</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="863" parent="316" name="t1">
+      <Comment>项目数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="864" parent="316" name="t2">
+      <Comment>项目比例</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="865" parent="316" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="866" parent="316" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="867" parent="317" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="868" parent="317" name="t0">
+      <Comment>产业类别</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="869" parent="317" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="870" parent="317" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="871" parent="317" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="872" parent="318" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="873" parent="318" name="t0">
+      <Comment>统计项</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="874" parent="318" name="t1">
+      <Comment>数量</Comment>
+      <DataType>double(50,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="875" parent="318" name="t2">
+      <Comment>单位</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="876" parent="318" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="877" parent="318" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="878" parent="319" name="xh">
+      <Comment>序号</Comment>
+      <DataType>int(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="879" parent="319" name="t0">
+      <Comment>进度类型</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="880" parent="319" name="t1">
+      <Comment>数量</Comment>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="881" parent="319" name="PRIMARY">
+      <ColNames>xh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="882" parent="319" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="883" parent="320" name="js_id">
+      <Comment>角色ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="884" parent="320" name="ymqy_dm">
+      <Comment>页面区域代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="885" parent="320" name="tj_id">
+      <Comment>统计ID</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="886" parent="320" name="tbcs">
+      <Comment>图表显示格式参数(如轴名称、位置、大小、提示信息等)</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="887" parent="320" name="PRIMARY">
+      <ColNames>js_id
+ymqy_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="888" parent="320" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="889" parent="321" name="tj_id">
+      <Comment>统计ID</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="890" parent="321" name="tj_mc">
+      <Comment>统计名称</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="891" parent="321" name="tblx">
+      <Comment>图表类型（A0：无/单数据 B1：单曲线 B2：多曲线 C1：单柱图 C2：多柱图 D：饼状图）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="892" parent="321" name="sjwd">
+      <Comment>数据维度</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="893" parent="321" name="sjly">
+      <Comment>数据来源（0：实时数据 1：修改数据）</Comment>
+      <DataType>char(1)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="894" parent="321" name="kssj">
+      <Comment>开始时间（当数据来源为【1：修改数据】时，该数据什么时间开始显示）</Comment>
+      <DataType>date|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="895" parent="321" name="zzsj">
+      <Comment>截止时间（当数据来源为【1：修改数据】时，该数据显示到什么时间为止）</Comment>
+      <DataType>date|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="896" parent="321" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="897" parent="321" name="sjtjscywd">
+      <Comment>数据统计双池业务点</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="898" parent="321" name="PRIMARY">
+      <ColNames>tj_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="899" parent="321" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="900" parent="322" name="tjid">
+      <Comment>统计ID</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="901" parent="322" name="wdxh">
+      <Comment>维度序号</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="902" parent="322" name="zdmc">
+      <Comment>字段名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="903" parent="322" name="zdlx">
+      <Comment>字段的类型(A：字符串 B：日期型 C：小数型 D：整数型)</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="904" parent="322" name="PRIMARY">
+      <ColNames>tjid
+wdxh</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="905" parent="322" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="906" parent="323" name="ymqy_dm">
+      <Comment>页面区域代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="907" parent="323" name="ymqy_mc">
+      <Comment>页面区域名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="908" parent="323" name="ymqy_width">
+      <Comment>页面区域长度（像素）</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="909" parent="323" name="ymqy_height">
+      <Comment>页面区域宽度（像素）</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="910" parent="323" name="ymqy_addr">
+      <Comment>所在页面地址（URL地址）</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="911" parent="323" name="PRIMARY">
+      <ColNames>ymqy_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="912" parent="323" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="913" parent="324" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="914" parent="324" name="jgid">
+      <Comment>机构ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="915" parent="324" name="gcgl">
+      <Comment>过程管理</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="916" parent="324" name="PRIMARY">
+      <ColNames>xmgc_id
+jgid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="917" parent="324" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="918" parent="325" name="xmhj_id">
+      <Comment>项目环节ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="919" parent="325" name="wj_dm">
+      <Comment>文件代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="920" parent="325" name="PRIMARY">
+      <ColNames>xmhj_id
+wj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="921" parent="325" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="922" parent="326" name="xmhj_id">
+      <Comment>项目环节ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="923" parent="326" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="924" parent="326" name="xmhj_mc">
+      <Comment>项目环节名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="925" parent="326" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="926" parent="326" name="PRIMARY">
+      <ColNames>xmhj_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="927" parent="326" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="928" parent="327" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="929" parent="327" name="xmgc_mc">
+      <Comment>项目过程名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="930" parent="327" name="pxxh">
+      <Comment>排序序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="931" parent="327" name="bz1">
+      <Comment>工程流程图标志（Y：选用  N：不选用）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="932" parent="327" name="bz2">
+      <Comment>项目阶段标志（Y：选用  N：不选用）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="933" parent="327" name="bz3">
+      <Comment>项目详情标志（Y：选用  N：不选用）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="934" parent="327" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="935" parent="327" name="PRIMARY">
+      <ColNames>xmgc_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="936" parent="327" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="937" parent="328" name="wj_dm">
+      <Comment>文件代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="938" parent="328" name="wj_mc">
+      <Comment>文件名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="939" parent="328" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="940" parent="328" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="941" parent="328" name="PRIMARY">
+      <ColNames>wj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="942" parent="328" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="943" parent="329" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="944" parent="329" name="nd">
+      <Comment>年度</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="945" parent="329" name="gyzcz">
+      <Comment>工业总产值</Comment>
+      <DataType>double|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="946" parent="329" name="gszcz">
+      <Comment>规上总产值</Comment>
+      <DataType>double|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="947" parent="329" name="PRIMARY">
+      <ColNames>xmdm
+nd</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="948" parent="329" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="949" parent="330" name="xmgzdl_dm">
+      <Comment>项目跟踪大类代码（示例：01、02）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="950" parent="330" name="xmgzdl_mc">
+      <Comment>项目跟踪大类名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="951" parent="330" name="pxxh">
+      <Comment>排序序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="952" parent="330" name="PRIMARY">
+      <ColNames>xmgzdl_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="953" parent="330" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="954" parent="331" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="955" parent="331" name="nd">
+      <Comment>年度</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="956" parent="331" name="jhsczz">
+      <Comment>计划生产总值</Comment>
+      <DataType>double|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="957" parent="331" name="sjsczz">
+      <Comment>实际生产总值</Comment>
+      <DataType>double|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="958" parent="331" name="PRIMARY">
+      <ColNames>xmdm
+nd</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="959" parent="331" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="960" parent="332" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="961" parent="332" name="wtnr">
+      <Comment>问题内容</Comment>
+      <DataType>text|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <index id="962" parent="332" name="PRIMARY">
+      <ColNames>xmdm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="963" parent="332" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="964" parent="333" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="965" parent="333" name="wj_dm">
+      <Comment>文件代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="966" parent="333" name="fj_id">
+      <Comment>附件ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="967" parent="333" name="PRIMARY">
+      <ColNames>xmdm
+wj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="968" parent="333" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="969" parent="334" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="970" parent="334" name="gcxqlb_dm">
+      <Comment>工程详情类别代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="971" parent="334" name="gcxqnr">
+      <Comment>工程详情内容</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="972" parent="334" name="pxxh">
+      <Comment>排序序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="973" parent="334" name="PRIMARY">
+      <ColNames>xmdm
+gcxqlb_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="974" parent="334" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="975" parent="335" name="gcxqlb_dm">
+      <Comment>工程详情类别代码（示例：01、02）</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="976" parent="335" name="gcxqlb_mc">
+      <Comment>工程详情类别名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <index id="977" parent="335" name="PRIMARY">
+      <ColNames>gcxqlb_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="978" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="979" parent="336" name="xmgzxx_id">
+      <Comment>项目跟踪信息ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="980" parent="336" name="xmgzdl_dm">
+      <Comment>项目跟踪内容大类代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="981" parent="336" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="982" parent="336" name="gznr">
+      <Comment>工作内容</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="983" parent="336" name="sjkssj">
+      <Comment>实际开始时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="984" parent="336" name="sjwcsj">
+      <Comment>实际完成时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="985" parent="336" name="sjgzhs">
+      <Comment>实际工作耗时（天）</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="986" parent="336" name="zyfzr">
+      <Comment>主要负责人</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="987" parent="336" name="jz">
+      <DataType>varchar(300)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="988" parent="336" name="czwt">
+      <DataType>varchar(300)|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="989" parent="336" name="xyxtdjbr">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="990" parent="336" name="jy">
+      <DataType>varchar(300)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="991" parent="336" name="bz">
+      <Comment>备注</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="992" parent="336" name="pxxh">
+      <Comment>排序序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <index id="993" parent="336" name="PRIMARY">
+      <ColNames>xmgzxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="994" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="995" parent="337" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="996" parent="337" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="997" parent="337" name="xmhj_id">
+      <Comment>项目环节ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="998" parent="337" name="xmhjnr">
+      <Comment>项目环节内容</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="999" parent="337" name="PRIMARY">
+      <ColNames>xmdm
+xmgc_id
+xmhj_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1000" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1001" parent="338" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1002" parent="338" name="xmmc">
+      <Comment>项目名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1003" parent="338" name="parent_xmdm">
+      <Comment>父项目代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1004" parent="338" name="xmjs">
+      <Comment>项目介绍</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1005" parent="338" name="xmlx_dm">
+      <Comment>项目类别</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1006" parent="338" name="yqcy_dm">
+      <Comment>产业类别</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1007" parent="338" name="xmtj_dm">
+      <Comment>项目统计类别</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1008" parent="338" name="zdxm_flag">
+      <Comment>重点项目标志（Y：重点  N:非重点）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="1009" parent="338" name="xmztz">
+      <Comment>项目总投资（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="1010" parent="338" name="gdzctz">
+      <Comment>固定资产投资（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="1011" parent="338" name="zsyz">
+      <Comment>招商引资（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="1012" parent="338" name="zdmj">
+      <Comment>占地面积（单位：亩）</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="1013" parent="338" name="jhkgsj">
+      <Comment>计划开工日期</Comment>
+      <DataType>date|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="1014" parent="338" name="sjkgsj">
+      <Comment>实际开工日期</Comment>
+      <DataType>date|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="1015" parent="338" name="jhwcsj">
+      <Comment>计划完成日期</Comment>
+      <DataType>date|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <column id="1016" parent="338" name="sjwcsj">
+      <Comment>实际完成日期</Comment>
+      <DataType>date|0s</DataType>
+      <Position>16</Position>
+    </column>
+    <column id="1017" parent="338" name="xmjd_dm">
+      <Comment>项目阶段</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>17</Position>
+    </column>
+    <column id="1018" parent="338" name="xmgc_id">
+      <Comment>项目过程ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>18</Position>
+    </column>
+    <column id="1019" parent="338" name="xmhj_id">
+      <Comment>项目环节ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>19</Position>
+    </column>
+    <column id="1020" parent="338" name="xmjd">
+      <Comment>项目节点</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>20</Position>
+    </column>
+    <column id="1021" parent="338" name="xmzt_dm">
+      <Comment>项目状态</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>21</Position>
+    </column>
+    <column id="1022" parent="338" name="ryxx_id">
+      <Comment>项目负责人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>22</Position>
+    </column>
+    <column id="1023" parent="338" name="xmssjd">
+      <Comment>项目实施进度（ 百分比：值=10表示10%）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>23</Position>
+    </column>
+    <column id="1024" parent="338" name="ywctz">
+      <Comment>已完成投资（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>24</Position>
+    </column>
+    <column id="1025" parent="338" name="jhwcsczz">
+      <Comment>计划完成生产总值（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>25</Position>
+    </column>
+    <column id="1026" parent="338" name="sjwcsczz">
+      <Comment>实际完成生产总值（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>26</Position>
+    </column>
+    <column id="1027" parent="338" name="gyzcz">
+      <Comment>工业总产值（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>27</Position>
+    </column>
+    <column id="1028" parent="338" name="gszcz">
+      <Comment>规上总产值（单位：万元）</Comment>
+      <DataType>double|0s</DataType>
+      <Position>28</Position>
+    </column>
+    <column id="1029" parent="338" name="jsqq">
+      <Comment>建设期起</Comment>
+      <DataType>date|0s</DataType>
+      <Position>29</Position>
+    </column>
+    <column id="1030" parent="338" name="jsqz">
+      <Comment>建设期止</Comment>
+      <DataType>date|0s</DataType>
+      <Position>30</Position>
+    </column>
+    <column id="1031" parent="338" name="tzgm_dm">
+      <Comment>投资规模</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>31</Position>
+    </column>
+    <column id="1032" parent="338" name="jsxz_dm">
+      <Comment>建设性质</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <Position>32</Position>
+    </column>
+    <column id="1033" parent="338" name="fj_id">
+      <Comment>项目总览图片地址</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>33</Position>
+    </column>
+    <column id="1034" parent="338" name="xgr">
+      <Comment>修改人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>34</Position>
+    </column>
+    <column id="1035" parent="338" name="xgsj">
+      <Comment>修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>35</Position>
+    </column>
+    <column id="1036" parent="338" name="jsdw_dm">
+      <Comment>建设单位代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>36</Position>
+    </column>
+    <index id="1037" parent="338" name="PRIMARY">
+      <ColNames>xmdm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1038" parent="338" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1039" parent="339" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1040" parent="339" name="wj_dm">
+      <Comment>文件代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1041" parent="339" name="jhkssj">
+      <Comment>计划开始时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1042" parent="339" name="jhwcsj">
+      <Comment>计划完成时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1043" parent="339" name="sjkssj">
+      <Comment>实际开始时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1044" parent="339" name="sjwcsj">
+      <Comment>实际完成时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <index id="1045" parent="339" name="PRIMARY">
+      <ColNames>xmdm
+wj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1046" parent="339" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1047" parent="340" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1048" parent="340" name="rzsj">
+      <Comment>日志时间</Comment>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1049" parent="340" name="rznr">
+      <Comment>日志内容</Comment>
+      <DataType>text|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1050" parent="340" name="lrr">
+      <Comment>录入人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1051" parent="340" name="lrsj">
+      <Comment>录入时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="1052" parent="340" name="PRIMARY">
+      <ColNames>xmdm
+rzsj</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1053" parent="340" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1054" parent="341" name="xxtxxx_id">
+      <Comment>消息提醒信息ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1055" parent="341" name="xxtxlx_dm">
+      <Comment>消息提醒类型代码（示例：A、B）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1056" parent="341" name="xxnr">
+      <Comment>消息内容</Comment>
+      <DataType>varchar(600)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1057" parent="341" name="xxscsj">
+      <Comment>消息生成时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1058" parent="341" name="data_id">
+      <Comment>数据ID（【留言ID】或【预警ID】之类的数据值）</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="1059" parent="341" name="PRIMARY">
+      <ColNames>xxtxxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1060" parent="341" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1061" parent="342" name="yhxxtxjl_id">
+      <Comment>用户消息提醒记录ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1062" parent="342" name="xxtxxx_id">
+      <Comment>消息提醒信息ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1063" parent="342" name="jsr">
+      <Comment>接收人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1064" parent="342" name="ydbz">
+      <Comment>阅读标志（Y：已读 N：未读）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1065" parent="342" name="ydsj">
+      <Comment>阅读时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1066" parent="342" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <index id="1067" parent="342" name="PRIMARY">
+      <ColNames>yhxxtxjl_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1068" parent="342" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1069" parent="343" name="txsx_id">
+      <Comment>提醒事项ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1070" parent="343" name="wj_dm">
+      <Comment>文件代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="1071" parent="343" name="PRIMARY">
+      <ColNames>txsx_id
+wj_dm</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1072" parent="343" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1073" parent="344" name="txsx_id">
+      <Comment>提醒事项ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1074" parent="344" name="txsx_mc">
+      <Comment>提醒事项名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1075" parent="344" name="yjlx_dm">
+      <Comment>预警类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1076" parent="344" name="yjxj_dm">
+      <Comment>预警星级代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1077" parent="344" name="yjxxnr">
+      <Comment>预警信息内容</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1078" parent="344" name="yjcs">
+      <Comment>预警参数</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1079" parent="344" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1080" parent="344" name="xgr">
+      <Comment>修改人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="1081" parent="344" name="xgsj">
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <index id="1082" parent="344" name="PRIMARY">
+      <ColNames>txsx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1083" parent="344" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1084" parent="345" name="yjxx_id">
+      <Comment>预警信息ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1085" parent="345" name="xmdm">
+      <Comment>项目代码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1086" parent="345" name="xmmc">
+      <Comment>项目名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1087" parent="345" name="jhkssj">
+      <Comment>项目计划_计划开始时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1088" parent="345" name="jhwcsj">
+      <Comment>项目计划_计划完成时间</Comment>
+      <DataType>date|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1089" parent="345" name="yjlx_dm">
+      <Comment>预警类型代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="1090" parent="345" name="yjxxnr">
+      <Comment>预警信息内容</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1091" parent="345" name="txsx_id">
+      <Comment>提醒事项ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="1092" parent="345" name="txsx_mc">
+      <Comment>提醒事项名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="1093" parent="345" name="yjxj_dm">
+      <Comment>预警星级代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="1094" parent="345" name="xmfzr">
+      <Comment>项目负责人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="1095" parent="345" name="yjscsj">
+      <Comment>预警生成时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="1096" parent="345" name="gbzt">
+      <Comment>关闭状态（0：未关闭 1：已关闭）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="1097" parent="345" name="clgc">
+      <Comment>处理过程</Comment>
+      <DataType>varchar(600)|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="1098" parent="345" name="clr">
+      <Comment>处理人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <column id="1099" parent="345" name="clsj">
+      <Comment>处理时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <Position>16</Position>
+    </column>
+    <column id="1100" parent="345" name="clfs">
+      <Comment>处理方式（0：自动处理 1：手动处理）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>17</Position>
+    </column>
+    <column id="1101" parent="345" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>18</Position>
+    </column>
+    <index id="1102" parent="345" name="PRIMARY">
+      <ColNames>yjxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1103" parent="345" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1104" parent="346" name="ID">
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1105" parent="346" name="SJ">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1106" parent="346" name="RZ_LX">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="1107" parent="346" name="OPERATOR">
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1108" parent="346" name="IP">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1109" parent="346" name="RZNR">
+      <DataType>varchar(4000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="1110" parent="346" name="CWXX">
+      <DataType>blob|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1111" parent="346" name="WZ">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="1112" parent="346" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1113" parent="346" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1114" parent="347" name="ID">
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1115" parent="347" name="SJ">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1116" parent="347" name="RZ_LX">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="1117" parent="347" name="OPERATOR">
+      <DataType>varchar(4000)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1118" parent="347" name="IP">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1119" parent="347" name="RZNR">
+      <DataType>varchar(4000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="1120" parent="347" name="CWXX">
+      <DataType>blob|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1121" parent="347" name="WZ">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="1122" parent="347" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1123" parent="347" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1124" parent="348" name="ryxx_id">
+      <Comment>人员ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1125" parent="348" name="ryxx_mc">
+      <Comment>人员名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1126" parent="348" name="xb">
+      <Comment>性别( M:男 F:女)</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1127" parent="348" name="sfzh">
+      <Comment>身份证号</Comment>
+      <DataType>varchar(18)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1128" parent="348" name="login_id">
+      <Comment>登录账号</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1129" parent="348" name="qyid">
+      <Comment>所属企业</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1130" parent="348" name="sjhm">
+      <Comment>手机号码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1131" parent="348" name="dzyx">
+      <Comment>电子邮箱</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="1132" parent="348" name="zw_dm">
+      <Comment>职位</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="1133" parent="348" name="fj_id">
+      <Comment>人员头像附件ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="1134" parent="348" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <index id="1135" parent="348" name="PRIMARY">
+      <ColNames>ryxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1136" parent="348" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1137" parent="349" name="qyid">
+      <Comment>企业ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1138" parent="349" name="qymc">
+      <Comment>企业名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1139" parent="349" name="shxydm">
+      <Comment>社会信用代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1140" parent="349" name="qydz">
+      <Comment>企业地址</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1141" parent="349" name="frxm">
+      <Comment>法人姓名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1142" parent="349" name="lxdh">
+      <Comment>联系电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1143" parent="349" name="zdqy_flag">
+      <Comment>重点企业标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1144" parent="349" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="1145" parent="349" name="PRIMARY">
+      <ColNames>qyid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1146" parent="349" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1147" parent="350" name="jgid">
+      <Comment>机构ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1148" parent="350" name="jgmc">
+      <Comment>机构名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1149" parent="350" name="dz">
+      <Comment>机构地址</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1150" parent="350" name="jglxdh">
+      <Comment>机构联系电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1151" parent="350" name="bz">
+      <Comment>备注</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1152" parent="350" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <index id="1153" parent="350" name="PRIMARY">
+      <ColNames>jgid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1154" parent="350" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1155" parent="351" name="ryxx_id">
+      <Comment>人员ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1156" parent="351" name="ryxx_mc">
+      <Comment>人员名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1157" parent="351" name="xb">
+      <Comment>性别( M:男 F:女)</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1158" parent="351" name="login_id">
+      <Comment>登录账号</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1159" parent="351" name="jgid">
+      <Comment>所属机构</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1160" parent="351" name="sjhm">
+      <Comment>手机号码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1161" parent="351" name="dzyx">
+      <Comment>电子邮箱</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="1162" parent="351" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="1163" parent="351" name="PRIMARY">
+      <ColNames>ryxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1164" parent="351" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1165" parent="352" name="ryxx_id">
+      <Comment>人员ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1166" parent="352" name="ryxx_mc">
+      <Comment>人员名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1167" parent="352" name="xb">
+      <Comment>性别( M:男 F:女)</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1168" parent="352" name="login_id">
+      <Comment>登录账号</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1169" parent="352" name="sjhm">
+      <Comment>手机号码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1170" parent="352" name="dzyx">
+      <Comment>电子邮箱</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1171" parent="352" name="yxbz">
+      <Comment>有效标志（Y：有效 N：无效）</Comment>
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="1172" parent="352" name="PRIMARY">
+      <ColNames>ryxx_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1173" parent="352" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1174" parent="353" name="qyid">
+      <Comment>企业ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1175" parent="353" name="qymc">
+      <Comment>企业名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="1176" parent="353" name="shxydm">
+      <Comment>社会信用代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="1177" parent="353" name="qydz">
+      <Comment>企业地址</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="1178" parent="353" name="frxm">
+      <Comment>法人姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="1179" parent="353" name="frsjhm">
+      <Comment>法人手机号码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="1180" parent="353" name="qylxdh">
+      <Comment>企业联系电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="1181" parent="353" name="PRIMARY">
+      <ColNames>qyid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1182" parent="353" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

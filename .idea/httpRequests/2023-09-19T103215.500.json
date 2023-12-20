@@ -1,0 +1,7 @@
+{
+  "timestamp": "2023-09-19T02:32:15.429+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Error resolving template [blog/amaze/index], template might not exist or might not be accessible by any of the configured Template Resolvers",
+  "path": "/index"
+}

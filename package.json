@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sphere-collision": "^1.1.11"
+  }
+}

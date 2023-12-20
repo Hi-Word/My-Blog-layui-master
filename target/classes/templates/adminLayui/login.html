@@ -20,26 +20,166 @@
 </head>
 <body onkeydown="enterSubmit(event)" class="login-bg">
 
+<!--<div class="login layui-anim layui-anim-up">-->
+<!--    <div class="message">blog-管理登录</div>-->
+<!--    <div id="darkbannerwrap"></div>-->
+
+<!--    <div class="layui-form">-->
+<!--        <span class="x-red" th:if="${session.errorMsg != null}" th:text="${session.errorMsg}"></span>-->
+<!--        <input name="username" placeholder="用户名" type="text" lay-verify="required" class="layui-input">-->
+<!--        <hr class="hr15">-->
+<!--        <input name="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">-->
+<!--        <hr class="hr15">-->
+<!--        <input name="captcha" placeholder="验证码" type="text" lay-verify="required" class="layui-input">-->
+<!--        &lt;!&ndash; 添加验证码输入框 &ndash;&gt;-->
+<!--        <img src="/admin/v1/generateCaptchaImage" alt="验证码" onclick="this.src='/admin/v1/generateCaptchaImage?'+Math.random()" style="cursor: pointer;">-->
+<!--        &lt;!&ndash; 调用生成验证码图片接口，点击刷新验证码 &ndash;&gt;-->
+<!--        <hr class="hr15">-->
+<!--        <div id="slider"></div>-->
+<!--        <hr class="hr15">-->
+<!--        <input id="login" value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">-->
+<!--        <hr class="hr20">-->
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <div class="content">-->
+<!--            <div class="drop">-->
+<!--                <div class="contentBox">-->
+<!--                    <h2>Sign in</h2>-->
+<!--                    <form>-->
+<!--                        <div class="inputBox">-->
+<!--                            <input type="text" placeholder="Username" />-->
+<!--                        </div>-->
+<!--                        <div class="inputBox">-->
+<!--                            <input type="password" placeholder="Password" />-->
+<!--                        </div>-->
+<!--                        <div class="inputBox">-->
+<!--                            <input type="submit" value="Login" />-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="btns">-->
+<!--                <span>Forget</span>-->
+<!--                <span>Password</span>-->
+<!--            </div>-->
+<!--            <div class="btns signup">Signup</div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<script>-->
+
+<!--    function enterSubmit(obj) {-->
+<!--        //当enter 键按下后，需要执行的事件-->
+<!--        var button = document.getElementById('login');-->
+<!--        if (obj.keyCode == 13) {-->
+<!--            button.click();-->
+<!--        }-->
+<!--    }-->
+
+<!--    layui.config({-->
+<!--        base: '/X-admin/js/'-->
+<!--    }).use(['sliderVerify', 'form', 'layer'], function () {-->
+<!--        var form = layui.form,-->
+<!--            layer = layui.layer,-->
+<!--            sliderVerify = layui.sliderVerify,-->
+<!--            $ = layui.jquery;-->
+
+<!--        var slider = sliderVerify.render({-->
+<!--            elem: '#slider',-->
+<!--            onOk: function () {-->
+<!--                layer.msg("滑块验证通过");-->
+<!--            }-->
+<!--        });-->
+
+<!--        form.on('submit(login)', function (data) {-->
+<!--            if (slider.isOk()) {-->
+<!--                $.ajax({-->
+<!--                    url: "/admin/v1/login",-->
+<!--                    type: "post",-->
+<!--                    data: data.field,  // 这里会将表单内所有input的值（包括验证码）序列化为对象-->
+<!--                    success: function (s) {-->
+<!--                        if (s.resultCode == 200) {-->
+<!--                            layer.load(2);-->
+<!--                            setTimeout(function () {-->
+<!--                                layer.closeAll('loading');-->
+<!--                            }, 1500);-->
+<!--                            layer.msg(s.message, function () {-->
+<!--                                location.href = s.data;-->
+<!--                            });-->
+<!--                        } else {-->
+<!--                            layer.msg(s.message);-->
+<!--                            // 如果登录失败，刷新验证码-->
+<!--                            refreshCaptchaImage();-->
+<!--                        }-->
+<!--                    },-->
+<!--                    error: function () {-->
+<!--                        layer.msg("接口异常!");-->
+<!--                        refreshCaptchaImage(); // 接口错误时也刷新验证码-->
+<!--                    }-->
+<!--                });-->
+<!--            } else {-->
+<!--                layer.msg("请先通过滑块验证");-->
+<!--            }-->
+<!--        });-->
+<!--    });-->
+
+<!--    // 函数用于刷新验证码-->
+<!--    function refreshCaptchaImage() {-->
+<!--        document.getElementById('captchaImage').src = '/admin/v1/generateCaptchaImage?' + Math.random();-->
+<!--    }-->
+
+<!--</script>-->
 <div class="login layui-anim layui-anim-up">
     <div class="message">blog-管理登录</div>
     <div id="darkbannerwrap"></div>
 
-    <div class="layui-form">
-        <span class="x-red" th:if="${session.errorMsg != null}" th:text="${session.errorMsg}"></span>
-        <input name="username" placeholder="用户名" type="text" lay-verify="required" class="layui-input">
-        <hr class="hr15">
-        <input name="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">
-        <hr class="hr15">
-        <div id="slider"></div>
-        <hr class="hr15">
-        <input id="login" value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
-        <hr class="hr20">
+    <div class="container">
+        <div class="content">
+            <div class="drop">
+                <div class="contentBox">
+                    <h2>登录</h2>
+                    <form id="loginForm">
+                        <div class="inputBox">
+                            <input name="username" type="text" placeholder="用户名" />
+                        </div>
+                        <div class="inputBox">
+                            <input name="password" type="password" placeholder="密码" />
+                        </div>
+                        <div class="inputBox">
+                            <input name="captcha" type="text" placeholder="验证码" />
+                            <img id="captchaImage" src="/admin/v1/generateCaptchaImage" alt="验证码" onclick="refreshCaptchaImage()" style="cursor: pointer;">
+                            <!-- 点击刷新验证码 -->
+                        </div>
+                        <div class="inputBox">
+                            <div id="slider"></div>
+                        </div>
+<!--                        <div class="inputBox">-->
+<!--                            &lt;!&ndash; 修改按钮类型为button，防止提交表单，保留原有点击事件 &ndash;&gt;-->
+<!--                            <button id="login" type="button" onclick="submitForm()" style="width: 100%;color: #00a8c6">登录</button>-->
+<!--                        </div>-->
+                        <div class="inputBox">
+                            <input id="login" value="登录" type="button" onclick="submitForm()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="btns">
+                <!-- 添加点击事件调用函数 -->
+                <span onclick="showMessage('请联系网络管理员！')">忘记</span>
+                <span onclick="showMessage('请联系网络管理员！')">密码</span>
+            </div>
+            <div class="btns signup">注册</div>
+        </div>
     </div>
+
 </div>
 <script>
+    function showMessage(message) {
+        // 使用layer.msg函数弹出提示框
+        layer.msg(message);
+    }
 
     function enterSubmit(obj) {
-        //当enter 键按下后，需要执行的事件
         var button = document.getElementById('login');
         if (obj.keyCode == 13) {
             button.click();
@@ -48,7 +188,7 @@
 
     layui.config({
         base: '/X-admin/js/'
-    }).use(['sliderVerify', 'form', 'layer'], function () {
+    }).use(['sliderVerify', 'form', 'layer', 'jquery'], function () {
         var form = layui.form,
             layer = layui.layer,
             sliderVerify = layui.sliderVerify,
@@ -56,23 +196,20 @@
 
         var slider = sliderVerify.render({
             elem: '#slider',
-            // 当验证通过回调
             onOk: function () {
                 layer.msg("滑块验证通过");
             }
         });
 
-        // 监听提交
-        form.on('submit(login)', function (data) {
-            // 用于表单验证是否已经滑动成功
-            if(slider.isOk()){
+        // 修改为点击事件处理函数
+        function submitForm() {
+            if (slider.isOk()) {
                 $.ajax({
                     url: "/admin/v1/login",
                     type: "post",
-                    data: data.field,
-                    success: function(s) {
+                    data: $('#loginForm').serialize(),
+                    success: function (s) {
                         if (s.resultCode == 200) {
-                            //加载层-风格3
                             layer.load(2);
                             setTimeout(function () {
                                 layer.closeAll('loading');
@@ -81,20 +218,228 @@
                                 location.href = s.data;
                             });
                         } else {
-                            layer.msg(s.message, function () {
-                            });
+                            layer.msg(s.message);
+                            // 如果登录失败，刷新验证码
+                            refreshCaptchaImage();
                         }
                     },
-                    error:function(){
-                        layer.msg("接口异常!", function () {});
+                    error: function () {
+                        layer.msg("接口异常!");
+                        refreshCaptchaImage(); // 接口错误时也刷新验证码
                     }
                 });
-            }else{
+            } else {
                 layer.msg("请先通过滑块验证");
             }
-        });
+        }
+
+        // 函数用于刷新验证码
+        function refreshCaptchaImage() {
+            // 修改为正确的图片元素id
+            document.getElementById('captchaImage').src = '/admin/v1/generateCaptchaImage?' + Math.random();
+        }
+
+        // 确保按钮点击事件正常执行
+        $('#login').on('click', submitForm);
     });
 </script>
+<style>
+    .container {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eff0f4;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    .drop {
+        width: 350px;
+        height: 350px;
+        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+        position: relative;
+
+    .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        gap: 15px;
+
+    h2 {
+        color: #333;
+        gap: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    .inputBox {
+        width: 225px;
+        box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05),
+        15px 10px 15px rgba(0, 0, 0, 0.025);
+        border-radius: 25px;
+        position: relative;
+
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100%;
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    &::before {
+         content: "";
+         position: absolute;
+         top: 8px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 65%;
+         height: 5px;
+         background-color: rgba(255, 255, 255, 0.5);
+         border-radius: 5px;
+     }
+
+    &:last-child {
+         transition: 0.6s;
+         width: 120px;
+         background-color: #ff0f5b;
+         box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+         15px 15px 10px rgba(0, 0, 0, 0.05),
+         15px 10px 15px rgba(0, 0, 0, 0.025);
+
+    input {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1em;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+
+    &:hover {
+         width: 150px;
+     }
+    }
+    }
+    }
+    }
+
+    &:hover {
+         border-radius: 50%;
+     }
+
+    &::before {
+         content: "";
+         position: absolute;
+         top: 50px;
+         left: 85px;
+         width: 35px;
+         height: 35px;
+         border-radius: 50%;
+         background-color: #fff;
+         opacity: 0.9;
+     }
+
+    &::after {
+         content: "";
+         position: absolute;
+         top: 90px;
+         left: 110px;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background-color: #fff;
+         opacity: 0.9;
+     }
+    }
+
+    .btns {
+        position: absolute;
+        right: -120px;
+        bottom: 0;
+        width: 120px;
+        height: 120px;
+        background-color: #c61dff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        line-height: 1.2em;
+        letter-spacing: 0.1em;
+        font-size: 0.8em;
+        transition: 0.25s;
+        text-align: center;
+        box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05),
+        25px 35px 20px rgba(190, 1, 254, 0.1),
+        25px 30px 30px rgba(190, 1, 254, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+        border-radius: 44% 56% 65% 35% / 57% 58% 42% 43%;
+        user-select: none;
+
+    &:hover {
+         border-radius: 50%;
+     }
+
+    &::before {
+         content: "";
+         position: absolute;
+         top: 15px;
+         left: 30px;
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         background-color: #fff;
+         opacity: 0.45;
+     }
+    }
+
+    .signup {
+        bottom: 150px;
+        right: -120px;
+        width: 80px;
+        height: 80px;
+        border-radius: 49% 51% 52% 48%/ 63% 59% 41% 37%;
+        background-color: #01b4ff;
+        box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05),
+        25px 35px 20px rgba(1, 180, 255, 0.1),
+        25px 30px 30px rgba(1, 180, 255, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+
+    &::before {
+         left: 20px;
+         width: 15xpx;
+         height: 15px;
+     }
+    }
+    }
+    }
+</style>
 <!-- 底部结束 -->
 </body>
 </html>

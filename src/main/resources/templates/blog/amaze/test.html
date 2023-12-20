@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" th:href="@{/blog/amaze/css/base.css}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #box {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #000;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+    <title>代码背景墙</title>
+</head>
+<nav th:fragment="nav-fragment" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a th:href="@{/index}">主页</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/admin/v1/login}">后台</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/link}">个人主页</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/blog/1}">关于</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Hi-Word/My-Blog-layui-master">GitHub</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/blog/test}">代码墙</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<body>
+
+<div id="box">
+    <canvas id="canvas">您的浏览器不支持canvas元素。</canvas>
+</div>
+<!-- 看板娘 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script>
+    // 字母表
+    const text = "abcdefghijklmnopqrstuvwxyz";
+    // 字母宽度
+    const bl = 26;
+    let canvas;
+    let ctx;
+    let frameId = 0;
+    const startRates = {};
+    const rates = {};
+    const endRates = {};
+    const textObj = {};
+    // 初始化函数
+    const init = () => {
+        canvas = document.getElementById('canvas');
+        resize();
+        ctx = canvas.getContext('2d');
+        ctx.font = '14px SourceHanSansCN-Regular';
+    };
+    // 动画播放函数
+    const play = () => {
+        // 清除画布
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // 遍历每个字母列
+        for (let i = 0; i < canvas.width; i += bl) {
+            ctx.beginPath();
+            // 创建线性渐变
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            const s1 = 0.2 * Math.random();
+            const s2 = 0.8 * Math.random() + 0.2;
+            const step = 0.02 * Math.random();
+            rates[i] = rates[i] || -s1;
+            endRates[i] = endRates[i] || 0;
+            startRates[i] = startRates[i] || -s2;
+            // 设置渐变色
+            gradient.addColorStop(0, '#000000');
+            gradient.addColorStop(startRates[i] < 0 ? 0 : startRates[i], '#000000');
+            gradient.addColorStop(rates[i] < 0 ? 0 : rates[i], '#0ee30e');
+            gradient.addColorStop(endRates[i], '#000000');
+            gradient.addColorStop(1, '#000000');
+            ctx.fillStyle = gradient;
+            // 遍历每个字母行
+            for (let j = 0; j < canvas.height; j += bl) {
+                // 随机选择字母
+                textObj[i + '-' + j] = textObj[i + '-' + j] || text[Math.floor(Math.random() * text.length)];
+                // 在画布上绘制字母
+                ctx.fillText(textObj[i + '-' + j], i, j);
+            }
+            // 更新渐变位置
+            rates[i] += step;
+            endRates[i] += step;
+            startRates[i] += step;
+            // 处理渐变位置超出边界的情况
+            if (startRates[i] > 1) {
+                startRates[i] = -s2;
+            }
+            if (rates[i] > 1) {
+                if (startRates[i] === -s2) {
+                    rates[i] = -s1;
+                } else {
+                    rates[i] = 1;
+                }
+            }
+            if (endRates[i] > 1) {
+                if (rates[i] === -s1 && startRates[i] === -s2) {
+                    endRates[i] = step;
+                } else {
+                    endRates[i] = 1;
+                }
+            }
+        }
+        // 继续下一帧动画
+        frameId = requestAnimationFrame(play);
+    };
+    // 窗口大小变化时调整画布大小
+    const resize = () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    };
+    // 监听窗口大小变化
+    window.addEventListener('resize', resize);
+    // 初始化并开始动画
+    init();
+    play();
+    // 页面关闭时取消动画并移除事件监听
+    window.addEventListener('unload', () => {
+        cancelAnimationFrame(frameId);
+        window.removeEventListener('resize', resize);
+    });
+</script>
+</body>
+</html>

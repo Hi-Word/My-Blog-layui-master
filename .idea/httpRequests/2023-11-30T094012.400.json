@@ -1,0 +1,7 @@
+{
+  "timestamp": "2023-11-30T01:40:12.493+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required request body is missing: public void generator.controller.log.addLog(generator.domain.ALog)",
+  "path": "/api/logs/add"
+}

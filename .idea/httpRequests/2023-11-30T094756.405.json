@@ -1,0 +1,7 @@
+{
+  "timestamp": "2023-11-30T01:47:56.334+0000",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "message": "Request method 'POST' not supported",
+  "path": "/api/logs/update/10"
+}

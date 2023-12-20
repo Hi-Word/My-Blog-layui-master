@@ -18,12 +18,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Window-target" content="_top"/>
     <link rel="stylesheet" th:href="@{/blog/amaze/css/base.css}">
+    <link href="//unpkg.com/layui@2.8.13/dist/css/layui.css" rel="stylesheet">
     <script th:src="@{/X-admin/js/jquery.min.js}"></script>
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
             alert('朋友，上古浏览器不支持呢~');
         }
     </script>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mask {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid #ccc;
+            cursor: crosshair;
+            display: none;
+        }
+
+        .zoomed-image {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: 0;
+            left: 0;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: 800px 800px; /* 根据需要调整放大区域的大小 */
+            display: none;
+        }
+    </style>
 </head>
 <nav th:fragment="nav-fragment" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -54,7 +91,10 @@
                     <a th:href="@{/blog/1}">关于</a>
                 </li>
                 <li>
-                    <a href="https://github.com/myzhulin">GitHub</a>
+                    <a href="https://github.com/Hi-Word/My-Blog-layui-master">GitHub</a>
+                </li>
+                <li>
+                    <a th:href="@{/blog/test}">代码墙</a>
                 </li>
             </ul>
         </div>
@@ -76,7 +116,10 @@
                         <a th:href="@{/blog/1}">关于</a>
                     </li>
                     <li>
-                        <a href="https://github.com/myzhulin">GitHub</a>
+                        <a href="https://github.com/Hi-Word/My-Blog-layui-master">GitHub</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/blog/test}">代码墙</a>
                     </li>
                 </ul>
             </div>
@@ -95,38 +138,59 @@
 </nav>
 <header th:fragment="header-fragment" class="intro-header"
         th:style="'background-image:url(' + @{/blog/amaze/images/header.jpg} + ');'">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-          <span class="subheading">
-              一晃两三年，匆匆又夏天
-          </span>
+    <!-- 大盒子 存放整个时钟 -->
+    <div class="clock">
+        <!-- 外层时钟 -->
+        <div class="outer-clock-face">
+            <!-- 钟表数简陋显示,通过旋转实现6根分隔线 -->
+            <div class="marking marking-one"></div>
+            <div class="marking marking-two"></div>
+            <div class="marking marking-three"></div>
+            <div class="marking marking-four"></div>
+            <!-- 内层时钟 -->
+            <div class="inner-clock-face">
+                <!-- 时针 -->
+                <div class="hand hour-hand"></div>
+                <!-- 分针 -->
+                <div class="hand min-hand"></div>
+                <!-- 秒针 -->
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                      <span class="subheading">
+                          一晃两三年，匆匆又夏天
+                      </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
 <body>
+
 <div id="body-wrap">
-<!--    <nav class="not_index_bg" id="nav" style="background-image: url(./static/blog/amaze/images/1.jpg)";>-->
-<!--        <div id="page_site-info">-->
-<!--            <div id="site-title">-->
-<!--                <span class="blogtitle"></span>-->
-<!--                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>-->
-<!--                <script>-->
-<!--                    var typed = new Typed(".blogtitle", {-->
-<!--                        strings: ['求知若饥，虚心若愚', 'Stay Hungry Stay Foolish'],-->
-<!--                        startDelay: 300,-->
-<!--                        typeSpeed: 100,-->
-<!--                        loop: true,-->
-<!--                        backSpeed: 50,-->
-<!--                        showCursor: true-->
-<!--                    });-->
-<!--                </script>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
+    <!--    <nav class="not_index_bg" id="nav" style="background-image: url(./static/blog/amaze/images/1.jpg)";>-->
+    <!--        <div id="page_site-info">-->
+    <!--            <div id="site-title">-->
+    <!--                <span class="blogtitle"></span>-->
+    <!--                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>-->
+    <!--                <script>-->
+    <!--                    var typed = new Typed(".blogtitle", {-->
+    <!--                        strings: ['求知若饥，虚心若愚', 'Stay Hungry Stay Foolish'],-->
+    <!--                        startDelay: 300,-->
+    <!--                        typeSpeed: 100,-->
+    <!--                        loop: true,-->
+    <!--                        backSpeed: 50,-->
+    <!--                        showCursor: true-->
+    <!--                    });-->
+    <!--                </script>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </nav>-->
     <main id="content-outer">
         <div class="layout_page" id="content-inner">
             <div class="aside_content" id="aside_content">
@@ -138,7 +202,9 @@
                                  alt="avatar">
                             <div class="author-info__name">LIfeng</div>
                             <div class="author-info__description">00后青年，后端开发者，略懂前端, <s>学生，实习</s>，缺乏社会的毒打</div>
+
                         </div>
+
                         <div class="card-info-social-icons is-center">
                             <a class="social-icon" href="https://github.com/Hi-Word" target="_blank">
                                 <i class="fa fa-github"></i>
@@ -182,6 +248,7 @@
                                 <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
                             </div>
                         </div>
+                        <div id="ID-rate-demo-text"></div>
                     </div>
                 </div>
             </div>
@@ -259,6 +326,7 @@
                         <a href="https://adzhp.cn/" target="_blank" rel="noopener noreferrer">爱达杂货铺、</a>
                         <a href="http://ifeve.com/" target="_blank" rel="noopener noreferrer">并发编程网</a>
                     </div>
+
                     <h2>游戏</h2>
                     <div class="tool">
                         <a href="https://wanghao221.github.io/game/Aircraft-Avoid-Obstacles.html" target="_blank" rel="noopener noreferrer">飞机躲避障碍物</a>
@@ -285,8 +353,15 @@
         <div id="footer-wrap">
             <div class="copyright">&copy;2022 - 2023 BY LIfeng</div>
         </div>
+        <div class="container" id="container">
+            <img src="https://img.es123.com/uploadimg/image/20231027/20231027141045_71380.png" class="image" id="image">
+            <div class="mask" id="mask"></div>
+            <div class="zoomed-image" id="zoomed-image"></div>
+        </div>
     </footer>
+    <footer th:replace="blog/amaze/footer::footer-fragment"></footer>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -379,6 +454,213 @@
             }, 2000);
         }
     });
+</script>
+<script src="//unpkg.com/layui@2.8.13/dist/layui.js"></script>
+<script>
+    layui.use(function(){
+        var rate = layui.rate;
+        // 渲染
+        rate.render({
+            elem: '#ID-rate-demo-text',
+            value: 2, // 初始值
+            text: true // 开启文本
+        });
+    });
+</script>
+<style>
+
+    .clock {
+        width: 20rem;
+        height: 20rem;
+        border: 7px solid #ffebdb;
+        border-radius: 50%;
+        box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.1),
+        inset 4px 4px 10px rgba(168, 145, 128, 0.6),
+        inset -4px -4px 10px rgba(201, 175, 155, 0.2),
+        4px 4px 10px rgba(168, 145, 128, 0.6);
+        background-image: url("https://img.es123.com/uploadimg/image/20231027/20231027141045_71380.png");
+        background-size: 110%;
+        padding: 1rem;
+    }
+
+    .outer-clock-face {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer-clock-face::before,
+    .outer-clock-face::after {
+        content: '';
+        width: 10px;
+        height: 100%;
+        background: #596230;
+        position: absolute;
+        border-radius: 8px;
+    }
+
+
+    .outer-clock-face::after {
+        transform: rotate(90deg);
+    }
+
+    .marking {
+        width: 3px;
+        height: 100%;
+        background: #596230;
+        position: absolute;
+    }
+
+    .marking-one {
+        transform: rotateZ(30deg);
+    }
+
+    .marking-two {
+        transform: rotateZ(60deg);
+    }
+
+    .marking-three {
+        transform: rotateZ(120deg);
+    }
+
+    .marking-four {
+        transform: rotateZ(150deg);
+    }
+
+    .inner-clock-face {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: #fffebd;
+        z-index: 2;
+        border-radius: 50%;
+        background-image: url("https://img.es123.com/uploadimg/image/20231027/20231027141045_71380.png");
+        background-size: 108%;
+    }
+
+    .inner-clock-face::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #4d4b63;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hand {
+        width: 50%;
+        height: 6px;
+        background: red;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-top: -3px;
+        transform-origin: 100% 50%;
+        transform: rotate(90deg);
+    }
+
+    .hour-hand {
+        width: 30%;
+    }
+
+    .min-hand {
+        width: 40%;
+        height: 3px;
+    }
+
+    .second-hand {
+        background: #b3b3b3;
+        width: 45%;
+        height: 2px;
+    }
+</style>
+
+<script>
+    const secondHand = document.querySelector('.second-hand')
+    const minHand = document.querySelector('.min-hand')
+    const hourHand = document.querySelector('.hour-hand')
+
+
+
+
+
+    function setTime() {
+        const now = new Date()
+
+        // 获取当前的秒数
+        const seconds = now.getSeconds();
+        const secondsDegrees = seconds * 6 + 90
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+        console.log(secondsDegrees);
+        // console.log(secondDegrees);
+        // 获取当前的分针数
+        const mins = now.getMinutes();
+        const minsDegrees = mins * 6 + 90
+        minHand.style.transform = `rotate(${minsDegrees}deg)`
+
+
+        // 获取当前的小时数
+        const hours = now.getHours();
+        const hoursDegrees = hours * 30 + 90 + (mins / 60) * 30
+        hourHand.style.transform = `rotate(${hoursDegrees}deg)`
+    }
+
+    setTime()
+    setInterval(setTime, 1000)
+</script>
+<script>
+    const container = document.getElementById('container');
+    const image = document.getElementById('image');
+    const mask = document.getElementById('mask');
+    const zoomedImage = document.getElementById('zoomed-image');
+
+    container.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener('mouseenter', handleMouseEnter);
+    container.addEventListener('mouseleave', handleMouseLeave);
+
+    function handleMouseMove(event) {
+        const { left, top, width, height } = container.getBoundingClientRect();
+        const mouseX = event.clientX - left;
+        const mouseY = event.clientY - top;
+
+        const maskSize = 100;
+        const zoomedSize = 800; // 调整放大区域的大小
+
+        const maskX = mouseX - maskSize / 2;
+        const maskY = mouseY - maskSize / 2;
+
+        mask.style.left = `${maskX}px`;
+        mask.style.top = `${maskY}px`;
+
+        const percentX = mouseX / width;
+        const percentY = mouseY / height;
+
+        const zoomedX = -percentX * (zoomedSize - width);
+        const zoomedY = -percentY * (zoomedSize - height);
+
+        zoomedImage.style.backgroundImage = `url('${image.src}')`;
+        zoomedImage.style.backgroundPosition = `${zoomedX}px ${zoomedY}px`;
+    }
+
+    function handleMouseEnter() {
+        mask.style.display = 'block';
+        zoomedImage.style.display = 'block';
+    }
+
+    function handleMouseLeave() {
+        mask.style.display = 'none';
+        zoomedImage.style.display = 'none';
+    }
 </script>
 </body>
 

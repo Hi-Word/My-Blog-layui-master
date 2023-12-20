@@ -14,11 +14,16 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Random;
 
 /**
  * @qq交流群 796794009
@@ -97,16 +102,46 @@ public class AdminController {
      * @return: com.linn.blog.util.MessageBean
      * @date: 2019/8/23 19:50
      */
+//    @ResponseBody
+//    @PostMapping(value = "/v1/login")
+//    public Result<String> login(String username, String password,
+//                        HttpSession session) {
+//        if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password)) {
+//            return ResultGenerator.getResultByHttp(HttpStatusEnum.BAD_REQUEST);
+//        }
+//        QueryWrapper<AdminUser> queryWrapper = new QueryWrapper<>(
+//                new AdminUser().setLoginUserName(username).setLoginPassword(MD5Utils.MD5Encode(password,"UTF-8"))
+//        );
+//        AdminUser adminUser = adminUserService.getOne(queryWrapper);
+//        if (adminUser != null) {
+//            session.setAttribute(SessionConstants.LOGIN_USER, adminUser.getNickName());
+//            session.setAttribute(SessionConstants.LOGIN_USER_ID, adminUser.getAdminUserId());
+//            session.setAttribute(SessionConstants.LOGIN_USER_NAME, adminUser.getLoginUserName());
+//            session.setAttribute(SessionConstants.AUTHOR_IMG, blogConfigService.getById(
+//                    SysConfigConstants.SYS_AUTHOR_IMG.getConfigField()));
+//            return ResultGenerator.getResultByHttp(HttpStatusEnum.OK,"/admin/v1/index");
+//        } else {
+//            return ResultGenerator.getResultByHttp(HttpStatusEnum.UNAUTHORIZED);
+//        }
+//    }
     @ResponseBody
     @PostMapping(value = "/v1/login")
     public Result<String> login(String username, String password,
-                        HttpSession session) {
-        if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password)) {
+                                HttpSession session, String captcha) {
+        if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password) || StringUtils.isEmpty(captcha)) {
             return ResultGenerator.getResultByHttp(HttpStatusEnum.BAD_REQUEST);
         }
+
+        // 从会话中获取之前生成的验证码
+        String storedCaptcha = (String) session.getAttribute("captcha");
+
+        // 比较用户输入的验证码与之进行不区分大小写的比较
+        if (!captcha.equalsIgnoreCase(storedCaptcha)) {
+            return ResultGenerator.getResultByHttp(HttpStatusEnum.UNAUTHORIZED, "验证码验证失败");
+        }
+
         QueryWrapper<AdminUser> queryWrapper = new QueryWrapper<>(
-                new AdminUser().setLoginUserName(username)
-                        .setLoginPassword(MD5Utils.MD5Encode(password,"UTF-8"))
+                new AdminUser().setLoginUserName(username).setLoginPassword(MD5Utils.MD5Encode(password,"UTF-8"))
         );
         AdminUser adminUser = adminUserService.getOne(queryWrapper);
         if (adminUser != null) {
@@ -120,6 +155,73 @@ public class AdminController {
             return ResultGenerator.getResultByHttp(HttpStatusEnum.UNAUTHORIZED);
         }
     }
+
+    @GetMapping("/v1/generateCaptchaImage")
+    public void generateCaptchaImage(HttpSession session, HttpServletResponse response) throws IOException {
+        int width = 200;
+        int height = 50;
+
+        // 创建一个 BufferedImage 对象，用于生成图片
+        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = image.createGraphics();
+
+        // 设置背景色为白色
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, width, height);
+
+        // 生成随机的验证码字符串
+        String captcha = generateRandomCaptcha();
+        session.setAttribute("captcha", captcha);
+
+        // 设置验证码字体样式
+        Font font = new Font("Arial", Font.BOLD, 30);
+        graphics.setFont(font);
+
+        // 设置验证码字体颜色
+        graphics.setColor(Color.BLACK);
+
+        // 将验证码绘制到图片上
+        int x = 30;
+        int y = 40;
+        graphics.drawString(captcha, x, y);
+
+        // 添加干扰线
+        addInterferenceLines(graphics, width, height);
+
+        // 设置响应头，告诉浏览器返回的是图片格式
+        response.setContentType("image/png");
+
+        // 将生成的图片写入响应流
+        ImageIO.write(image, "png", response.getOutputStream());
+        graphics.dispose();
+    }
+
+    private String generateRandomCaptcha() {
+        int captchaLength = 6;
+        String captchaCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder captcha = new StringBuilder(captchaLength);
+
+        for (int i = 0; i < captchaLength; i++) {
+            int randomIndex = (int) (Math.random() * captchaCharacters.length());
+            captcha.append(captchaCharacters.charAt(randomIndex));
+        }
+
+        return captcha.toString();
+    }
+
+    private void addInterferenceLines(Graphics2D graphics, int width, int height) {
+        Random random = new Random();
+
+        for (int i = 0; i < 5; i++) {
+            int x1 = random.nextInt(width);
+            int y1 = random.nextInt(height);
+            int x2 = random.nextInt(width);
+            int y2 = random.nextInt(height);
+            graphics.setColor(Color.GRAY);
+            graphics.drawLine(x1, y1, x2, y2);
+        }
+    }
+
 
     /**
      * @Description: 验证密码是否正确

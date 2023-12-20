@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.feiniaojin:graceful-response:3.3.1-boot2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/feiniaojin/graceful-response/3.3.1-boot2/graceful-response-3.3.1-boot2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/feiniaojin/graceful-response/3.3.1-boot2/graceful-response-3.3.1-boot2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/feiniaojin/graceful-response/3.3.1-boot2/graceful-response-3.3.1-boot2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

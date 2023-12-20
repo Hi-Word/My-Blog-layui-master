@@ -1,19 +1,185 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="blog/amaze/header::head-fragment"></head>
+
+<head th:replace="blog/amaze/header::head-fragment">
+
+</head>
 <body id="blog">
+
 <div th:replace="blog/amaze/header::nav-fragment"></div>
 <div th:replace="blog/amaze/header::header-fragment"></div>
+<!-- 大盒子 存放整个时钟 -->
+<div class="clock">
+    <div class="outer-clock-face">
+        <div class="marking marking-one"></div>
+        <div class="marking marking-two"></div>
+        <div class="marking marking-three"></div>
+        <div class="marking marking-four"></div>
+
+        <div class="inner-clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+</div>
 <div class="am-g am-g-fixed blog-fixed">
     <div th:replace="blog/amaze/blog-list::blog-list-fragment"></div>
     <div th:replace="blog/amaze/side::side-fragment"></div>
 </div>
+
 <footer th:replace="blog/amaze/footer::footer-fragment"></footer>
 <!-- 看板娘 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-
 </body>
 <script th:src="@{/blog/plugins/jquery/jquery.min.js}"></script>
 <script th:src="@{/blog/plugins/search/search.js}"></script>
+<style>
+
+    .clock {
+        width: 20rem;
+        height: 20rem;
+        border: 7px solid #ffebdb;
+        border-radius: 50%;
+        box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.1),
+        inset 4px 4px 10px rgba(168, 145, 128, 0.6),
+        inset -4px -4px 10px rgba(201, 175, 155, 0.2),
+        4px 4px 10px rgba(168, 145, 128, 0.6);
+        background-image: url("https://img.es123.com/uploadimg/image/20231027/20231027141045_71380.png");
+        background-size: 110%;
+        padding: 1rem;
+    }
+
+    .outer-clock-face {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer-clock-face::before,
+    .outer-clock-face::after {
+        content: '';
+        width: 10px;
+        height: 100%;
+        background: #596230;
+        position: absolute;
+        border-radius: 8px;
+    }
+
+
+    .outer-clock-face::after {
+        transform: rotate(90deg);
+    }
+
+    .marking {
+        width: 3px;
+        height: 100%;
+        background: #596230;
+        position: absolute;
+    }
+
+    .marking-one {
+        transform: rotateZ(30deg);
+    }
+
+    .marking-two {
+        transform: rotateZ(60deg);
+    }
+
+    .marking-three {
+        transform: rotateZ(120deg);
+    }
+
+    .marking-four {
+        transform: rotateZ(150deg);
+    }
+
+    .inner-clock-face {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: #fffebd;
+        z-index: 2;
+        border-radius: 50%;
+        background-image: url("https://img.es123.com/uploadimg/image/20231027/20231027141045_71380.png");
+        background-size: 108%;
+    }
+
+    .inner-clock-face::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #4d4b63;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hand {
+        width: 50%;
+        height: 6px;
+        background: red;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-top: -3px;
+        transform-origin: 100% 50%;
+        transform: rotate(90deg);
+    }
+
+    .hour-hand {
+        width: 30%;
+    }
+
+    .min-hand {
+        width: 40%;
+        height: 3px;
+    }
+
+    .second-hand {
+        background: #b3b3b3;
+        width: 45%;
+        height: 2px;
+    }
+</style>
+
+<script>
+    const secondHand = document.querySelector('.second-hand')
+    const minHand = document.querySelector('.min-hand')
+    const hourHand = document.querySelector('.hour-hand')
+
+    function setTime() {
+        const now = new Date()
+
+        // 获取当前的秒数
+        const seconds = now.getSeconds();
+        const secondsDegrees = seconds * 6 + 90
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+        console.log(secondsDegrees);
+        // console.log(secondDegrees);
+        // 获取当前的分针数
+        const mins = now.getMinutes();
+        const minsDegrees = mins * 6 + 90
+        minHand.style.transform = `rotate(${minsDegrees}deg)`
+
+
+        // 获取当前的小时数
+        const hours = now.getHours();
+        const hoursDegrees = hours * 30 + 90 + (mins / 60) * 30
+        hourHand.style.transform = `rotate(${hoursDegrees}deg)`
+    }
+
+    setTime()
+    setInterval(setTime, 1000)
+</script>
 </html>

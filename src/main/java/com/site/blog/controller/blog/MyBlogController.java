@@ -274,6 +274,16 @@ public class MyBlogController {
     }
 
     /**
+     * 代码墙
+     *
+     * @return 视图名
+     */
+    @GetMapping("/test")
+    public String test() {
+        return "blog/" + theme + "/test";  // 返回test.html，框架会根据配置找到对应的视图页面
+    }
+
+    /**
      * 提交评论
      *
      * @return com.site.blog.pojo.dto.Result

@@ -13,6 +13,26 @@ import java.util.regex.Pattern;
 /**
  * 后台系统身份验证拦截器
  */
+//@Component
+//public class AdminLoginInterceptor implements HandlerInterceptor {
+//
+//    private static final Pattern pattern = Pattern.compile("\\b/admin\\b");
+//
+//    @Override
+//    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
+//        String uri = request.getRequestURI();
+//        if (!pattern.matcher(uri).find() &&
+//                Objects.isNull(request.getSession().getAttribute(SessionConstants.LOGIN_USER_ID))) {
+//            request.getSession().setAttribute("errorMsg", "请重新登陆");
+//            response.sendRedirect(request.getContextPath() + "/admin/v1/login");
+//            return false;
+//        } else {
+//            request.getSession().removeAttribute("errorMsg");
+//            return true;
+//        }
+//    }
+//}
+
 @Component
 public class AdminLoginInterceptor implements HandlerInterceptor {
 
@@ -21,6 +41,12 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         String uri = request.getRequestURI();
+
+        // 排除验证码生成接口的拦截
+        if (uri.endsWith("/v1/generateCaptchaImage")) {
+            return true;
+        }
+
         if (!pattern.matcher(uri).find() &&
                 Objects.isNull(request.getSession().getAttribute(SessionConstants.LOGIN_USER_ID))) {
             request.getSession().setAttribute("errorMsg", "请重新登陆");

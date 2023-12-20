@@ -1,0 +1,82 @@
+GET http://localhost:8092/api/logs/test
+
+<> 2023-12-01T101639.200.json
+
+###
+
+POST http://localhost:8092/api/logs/update/10
+Content-Type: application/json
+
+{
+  "id": 110
+}
+
+<> 2023-11-30T094756.405.json
+
+###
+
+POST http://localhost:8092/api/logs/add
+Content-Type: application/json
+
+{
+  "id": "10"
+}
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+<> 2023-11-30T094156.200.json
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 084468cf-2efe-4858-b1ba-ed1419fb3f7a,
+  "price": 813,
+  "ts": 1701308482,
+  "value": "content"
+}
+
+<> 2023-11-30T094123.200.json
+
+###
+
+POST http://localhost:8092/api/logs/add
+
+<> 2023-11-30T094012.400.json
+
+###
+
+GET http://localhost:8092/page
+
+<> 2023-09-19T153240.200.txt
+
+###
+
+GET http://localhost:8092/link
+
+<> 2023-09-19T103928.200.txt
+
+###
+
+GET http://localhost:8092/index
+
+<> 2023-09-19T103215.500.json
+
+###
+
+GET http://localhost:8092/admin/v1/generateCaptchaImage
+
+<> 2023-08-16T165459.200.html
+
+###
+
