@@ -13,21 +13,25 @@ import com.site.blog.pojo.dto.BlogPageCondition;
 import com.site.blog.pojo.dto.Result;
 import com.site.blog.pojo.vo.BlogDetailVO;
 import com.site.blog.service.*;
+import com.site.blog.util.CollUtil;
 import com.site.blog.util.PageResult;
 import com.site.blog.util.ResultGenerator;
+import com.site.blog.util.UploadFileUtils;
 import org.apache.commons.text.StringEscapeUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StreamUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -284,6 +288,16 @@ public class MyBlogController {
     }
 
     /**
+     * 五子棋
+     *
+     * @return 视图名
+     */
+    @GetMapping("/gobang")
+    public String  gobang() {
+        return "blog/" + theme + "/gobang";  // 返回test.html，框架会根据配置找到对应的视图页面
+    }
+
+    /**
      * 提交评论
      *
      * @return com.site.blog.pojo.dto.Result
@@ -306,4 +320,78 @@ public class MyBlogController {
         return ResultGenerator.getResultByHttp(HttpStatusEnum.INTERNAL_SERVER_ERROR);
     }
 
+    @PostMapping("/merge")
+    public void mergePdf(@RequestParam("file1") MultipartFile file1,
+                         @RequestParam("file2") MultipartFile file2,
+                         @RequestParam("fileName") String fileName,
+                         HttpServletResponse response) {
+        try {
+            // 获取输入流列表
+            List<InputStream> inputStreamList = getInputStreams(file1, file2);
+
+            // 合并PDF并获取合并后的数据
+            byte[] mergedPdfData = mergePdf(inputStreamList);
+
+            // 返回PDF数据，传入文件名
+            sendMergedPdfResponse(response, mergedPdfData, fileName);
+        } catch (Exception e) {
+            // 处理异常
+            e.printStackTrace();
+            // 在实际应用中，你可以返回适当的错误响应，比如 500 Internal Server Error
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
+    }
+    // 获取输入流列表的方法
+    private List<InputStream> getInputStreams(MultipartFile file1, MultipartFile file2) {
+        List<InputStream> inputStreamList = new ArrayList<>();
+
+        try {
+            // 使用 MultipartFile 获取文件的 InputStream
+            InputStream inputStream1 = file1.getInputStream();
+            InputStream inputStream2 = file2.getInputStream();
+            inputStreamList.add(inputStream1);
+            inputStreamList.add(inputStream2);
+        } catch (IOException e) {
+            // 处理异常
+            e.printStackTrace();
+        }
+
+        return inputStreamList;
+    }
+
+    // 合并PDF的方法
+    private byte[] mergePdf(List<InputStream> inputStreamList) throws IOException {
+        // 实现PDF合并逻辑，使用你之前提到的 UploadFileUtils.mergePdfBytes 方法
+        // 这里假设该方法返回合并后的PDF的字节数组
+
+        byte[] mergedPdfData = null;
+
+        int size = inputStreamList.size();
+        if (size > 0) {
+            mergedPdfData = StreamUtils.copyToByteArray(inputStreamList.get(0));
+            for (int i = 1; i < size; i++) {
+                InputStream currentInputStream = inputStreamList.get(i);
+                if (currentInputStream != null) {
+                    byte[] pdfBytes = StreamUtils.copyToByteArray(currentInputStream);
+                    mergedPdfData = UploadFileUtils.mergePdfBytes(mergedPdfData, pdfBytes);
+                }
+            }
+        }
+
+        return mergedPdfData;
+    }
+
+    // 修改 sendMergedPdfResponse 方法，接收文件名参数
+    private void sendMergedPdfResponse(HttpServletResponse response, byte[] mergedPdfData, String fileName) throws IOException {
+        if (mergedPdfData != null) {
+            response.setContentType("application/pdf");
+            // 使用用户指定的文件名
+            response.setHeader("Content-Disposition", "inline; filename=" + fileName);
+
+            try (OutputStream outputStream = response.getOutputStream()) {
+                outputStream.write(mergedPdfData);
+                outputStream.flush();
+            }
+        }
+    }
 }

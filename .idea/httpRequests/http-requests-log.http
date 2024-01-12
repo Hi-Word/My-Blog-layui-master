@@ -1,3 +1,13 @@
+GET http://localhost:8092/merge
+
+<> 2023-12-28T114548.200.json
+
+###
+
+GET http://localhost:8092/merge
+
+###
+
 GET http://localhost:8092/api/logs/test
 
 <> 2023-12-01T101639.200.json

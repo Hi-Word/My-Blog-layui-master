@@ -27,6 +27,18 @@
     <div th:replace="blog/amaze/blog-list::blog-list-fragment"></div>
     <div th:replace="blog/amaze/side::side-fragment"></div>
 </div>
+<!--pdf两个文件合并-->
+<!--<form id="pdfMergeForm" enctype="multipart/form-data">-->
+<!--    <label for="file1">选择第一个PDF文件：</label>-->
+<!--    <input type="file" id="file1" name="file1" accept=".pdf" required>-->
+<!--    <br>-->
+
+<!--    <label for="file2">选择第二个PDF文件：</label>-->
+<!--    <input type="file" id="file2" name="file2" accept=".pdf" required>-->
+<!--    <br>-->
+<!--    <button type="button" onclick="mergeAndOpenPdf(prompt('请输入合并后的PDF文件名（不带扩展名）：'))">合并PDF并查看</button>-->
+<!--    <button type="button" onclick="downloadMergedPdf()">下载合并后的PDF</button>-->
+<!--</form>-->
 
 <footer th:replace="blog/amaze/footer::footer-fragment"></footer>
 <!-- 看板娘 -->
@@ -152,7 +164,6 @@
         height: 2px;
     }
 </style>
-
 <script>
     const secondHand = document.querySelector('.second-hand')
     const minHand = document.querySelector('.min-hand')
@@ -182,4 +193,114 @@
     setTime()
     setInterval(setTime, 1000)
 </script>
+
+<!--<script>-->
+<!--    var mergedPdfData;  // 全局变量，用于存储合并后的 PDF 数据-->
+
+<!--    // 执行合并操作，并传递文件名-->
+<!--    function mergeAndOpenPdf(fileName) {-->
+<!--        // 获取文件-->
+<!--        var file1 = document.getElementById('file1').files[0];-->
+<!--        var file2 = document.getElementById('file2').files[0];-->
+
+<!--        if (!file1 || !file2) {-->
+<!--            alert("请选择两个PDF文件");-->
+<!--            return;-->
+<!--        }-->
+
+<!--        // 构建表单数据对象-->
+<!--        var formData = new FormData();-->
+<!--        formData.append('file1', file1);-->
+<!--        formData.append('file2', file2);-->
+<!--        formData.append('fileName', fileName);  // 添加文件名参数-->
+
+<!--        // 发送合并请求-->
+<!--        var xhr = new XMLHttpRequest();-->
+<!--        xhr.open('POST', '/merge', true);-->
+<!--        xhr.onreadystatechange = function () {-->
+<!--            if (xhr.readyState === 4) {-->
+<!--                if (xhr.status === 200) {-->
+<!--                    // 合并成功后打开查看-->
+<!--                    openPdfViewer(xhr.response);-->
+<!--                } else {-->
+<!--                    // 处理错误的响应-->
+<!--                    alert("PDF文件合并失败，请检查文件格式或联系管理员。");-->
+<!--                }-->
+<!--            }-->
+<!--        };-->
+
+<!--        xhr.responseType = 'arraybuffer';  // 设置响应类型为二进制数组缓冲区-->
+<!--        xhr.onload = function () {-->
+<!--            if (xhr.status === 200) {-->
+<!--                // 存储合并后的 PDF 数据-->
+<!--                mergedPdfData = xhr.response;-->
+
+<!--                // 在新窗口中显示 PDF-->
+<!--                openPdfViewer(mergedPdfData);-->
+<!--            } else {-->
+<!--                // 处理合并请求失败的情况-->
+<!--                alert("PDF文件合并失败，请检查文件格式或联系管理员。");-->
+<!--            }-->
+<!--        };-->
+
+<!--        xhr.responseType = 'arraybuffer';  // 设置响应类型为二进制数组-->
+<!--        xhr.send(formData);-->
+<!--    }-->
+
+<!--    // 打开 PDF 查看器-->
+<!--    function openPdfViewer(pdfData) {-->
+<!--        // 尝试打开一个新窗口-->
+<!--        var newTab = window.open();-->
+
+<!--        // 检查新窗口是否成功打开-->
+<!--        if (newTab) {-->
+<!--            // 使用 PDF.js 在新窗口中显示 PDF-->
+<!--            newTab.document.write('<iframe width="100%" height="100%" src="data:application/pdf;base64,' + btoa(new Uint8Array(pdfData).reduce(function (data, byte) {-->
+<!--                return data + String.fromCharCode(byte);-->
+<!--            }, '')) + '"></iframe>');-->
+<!--        } else {-->
+<!--            // 处理新窗口无法打开的情况-->
+<!--            alert("无法打开新窗口，请检查您的浏览器设置并重试。");-->
+<!--        }-->
+<!--    }-->
+
+<!--    // 下载合并后的 PDF-->
+<!--    function downloadMergedPdf() {-->
+<!--        if (mergedPdfData) {-->
+<!--            // 提示用户输入文件名-->
+<!--            var fileName = prompt("请输入合并后的PDF文件名（不带扩展名）：");-->
+
+<!--            // 检查用户是否提供了文件名-->
+<!--            if (fileName) {-->
+<!--                // 在文件名后追加 ".pdf" 扩展名-->
+<!--                fileName = fileName.trim() + '.pdf';-->
+
+<!--                // 从 PDF 数据创建 Blob-->
+<!--                var blob = new Blob([mergedPdfData], { type: 'application/pdf' });-->
+
+<!--                // 创建临时链接元素-->
+<!--                var link = document.createElement('a');-->
+
+<!--                // 设置链接属性-->
+<!--                link.href = window.URL.createObjectURL(blob);-->
+<!--                link.download = fileName;-->
+
+<!--                // 将链接追加到文档并触发点击事件-->
+<!--                document.body.appendChild(link);-->
+<!--                link.click();-->
+
+<!--                // 从文档中移除链接-->
+<!--                document.body.removeChild(link);-->
+<!--            } else {-->
+<!--                // 提示用户输入有效的文件名-->
+<!--                alert("请输入有效的文件名。");-->
+<!--            }-->
+<!--        } else {-->
+<!--            // 处理合并后的 PDF 数据不可用的情况-->
+<!--            alert("请先合并 PDF 并查看，然后再下载合并后的 PDF。");-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
 </html>
